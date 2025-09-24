@@ -205,21 +205,25 @@ function displayResults(data) {
     
     // Phylogenetic Analysis
     const phylo = data.phylogenetic_analysis;
+    const treeHtml = generateTreeVisualization(phylo.family_distribution);
+    
     document.getElementById('phylogeneticAnalysis').innerHTML = `
-        <div class="metric">
-            <span class="metric-label">Families Identified:</span>
-            <span class="metric-value">${phylo.families_identified}</span>
+        <div class="phylo-metrics">
+            <div class="metric">
+                <span class="metric-label">Families:</span>
+                <span class="metric-value">${phylo.families_identified}</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Total Nodes:</span>
+                <span class="metric-value">${phylo.total_nodes}</span>
+            </div>
         </div>
-        <div class="metric">
-            <span class="metric-label">Tree Depth:</span>
-            <span class="metric-value">${phylo.tree_depth}</span>
+        <div class="tree-container">
+            <h4>🌳 Family Tree</h4>
+            ${treeHtml}
         </div>
-        <div class="metric">
-            <span class="metric-label">Total Nodes:</span>
-            <span class="metric-value">${phylo.total_nodes}</span>
-        </div>
-        <div style="margin-top: 10px; font-size: 0.8rem; background: #f0f0f0; padding: 10px; border-radius: 5px;">
-            <strong>Newick Tree:</strong><br>
+        <div class="newick-container">
+            <strong>Newick Format:</strong>
             <code>${phylo.newick_tree}</code>
         </div>
     `;
@@ -309,6 +313,30 @@ function displayResults(data) {
             </ul>
         </div>
     `;
+}
+
+function generateTreeVisualization(familyDistribution) {
+    let treeHtml = '<div class="tree-diagram">';
+    
+    Object.entries(familyDistribution).forEach(([family, species], index) => {
+        const colors = ['#667eea', '#764ba2', '#f093fb', '#f5576c', '#4facfe', '#00f2fe'];
+        const color = colors[index % colors.length];
+        
+        treeHtml += `
+            <div class="family-branch" style="border-left-color: ${color}">
+                <div class="family-name" style="background: ${color}">${family}</div>
+                <div class="species-list">
+                    ${species.slice(0, 4).map(sp => `
+                        <div class="species-node">${sp}</div>
+                    `).join('')}
+                    ${species.length > 4 ? `<div class="more-species">+${species.length - 4} more</div>` : ''}
+                </div>
+            </div>
+        `;
+    });
+    
+    treeHtml += '</div>';
+    return treeHtml;
 }
 
 function exportResults() {

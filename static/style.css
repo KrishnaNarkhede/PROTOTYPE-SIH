@@ -245,6 +245,94 @@ header p {
     background: #5a6fd8;
 }
 
+.tree-container {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8f9ff;
+    border-radius: 8px;
+    border: 1px solid #e0e6ff;
+}
+
+.tree-container h4 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.tree-diagram {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.family-branch {
+    border-left: 4px solid #667eea;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+
+.family-name {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.species-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-left: 15px;
+}
+
+.species-node {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.more-species {
+    background: #f0f0f0;
+    border: 1px dashed #ccc;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    color: #777;
+    font-style: italic;
+}
+
+.phylo-metrics {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.newick-container {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.newick-container code {
+    display: block;
+    margin-top: 5px;
+    padding: 8px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+}
+
 .conservation-alert {
     background: #fff3cd;
     border: 1px solid #ffeaa7;
