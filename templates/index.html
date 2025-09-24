@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioMapper - Biodiversity Analysis Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧬 BioMapper</h1>
+            <p>Comprehensive Biodiversity Analysis Platform</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-box" id="uploadBox">
+                <input type="file" id="fileInput" accept=".fasta,.fa,.fas" hidden>
+                <div class="upload-content">
+                    <div class="upload-icon">📁</div>
+                    <h3>Upload FASTA File</h3>
+                    <p>Drag & drop or click to select your FASTA file</p>
+                    <button class="btn-primary" onclick="document.getElementById('fileInput').click()">Choose File</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="analysis-section" id="analysisSection" style="display: none;">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <p id="statusText">Analyzing sequences...</p>
+        </div>
+
+        <div class="results-section" id="resultsSection" style="display: none;">
+            <div class="results-header">
+                <h2>Analysis Results</h2>
+                <button class="btn-secondary" onclick="exportResults()">Export JSON</button>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3>📊 Sequence Statistics</h3>
+                    <div id="sequenceStats"></div>
+                </div>
+
+                <div class="result-card">
+                    <h3>🌍 Biodiversity Metrics</h3>
+                    <div id="biodiversityMetrics"></div>
+                </div>
+
+                <div class="result-card">
+                    <h3>🛡️ Conservation Status</h3>
+                    <div id="conservationStatus"></div>
+                </div>
+
+                <div class="result-card">
+                    <h3>🔬 Quality Analysis</h3>
+                    <div id="qualityAnalysis"></div>
+                </div>
+
+                <div class="result-card full-width">
+                    <h3>🧬 Species Classification</h3>
+                    <div id="speciesClassification"></div>
+                </div>
+
+                <div class="result-card">
+                    <h3>🌳 Phylogenetic Analysis</h3>
+                    <div id="phylogeneticAnalysis"></div>
+                </div>
+
+                <div class="result-card">
+                    <h3>🦠 Microbiome Analysis</h3>
+                    <div id="microbiomeAnalysis"></div>
+                </div>
+
+                <div class="result-card">
+                    <h3>⚛️ Quantum Analysis</h3>
+                    <div id="quantumAnalysis"></div>
+                </div>
+
+                <div class="result-card">
+                    <h3>🧪 Protein Prediction</h3>
+                    <div id="proteinAnalysis"></div>
+                </div>
+            </div>
+
+            <div class="summary-section">
+                <h3>📋 Executive Summary</h3>
+                <div id="executiveSummary"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
