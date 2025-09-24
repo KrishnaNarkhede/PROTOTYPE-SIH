@@ -1,0 +1,172 @@
+{
+  "status": "success",
+  "analysis_type": "comprehensive_biodiversity_analysis",
+  "input_file": "namdev.fasta",
+  "timestamp": "2025-09-20T03:11:53.043001",
+  "version": "1.0.0",
+  "sequence_statistics": {
+    "total_sequences": 1,
+    "total_base_pairs": 216,
+    "average_length": 216.0,
+    "min_length": 216,
+    "max_length": 216,
+    "median_length": 216.0,
+    "std_deviation": 0.0
+  },
+  "species_classification": [
+    {
+      "sequence_id": "ERR15464933.128766",
+      "predicted_species": "Unknown Species",
+      "confidence": 0.5,
+      "novelty_score": 0.6,
+      "local_db_match": false,
+      "iucn_status": "Not Evaluated",
+      "classification_method": "default"
+    }
+  ],
+  "biodiversity_metrics": {
+    "species_richness": 1,
+    "shannon_diversity_index": -0.0,
+    "pielou_evenness": 0,
+    "simpson_index": 0.0,
+    "chao1_estimator": 1,
+    "species_abundance": {
+      "Unknown Species": 1
+    },
+    "dominant_species": "Unknown Species",
+    "rarest_species": "Unknown Species"
+  },
+  "quality_analysis": {
+    "gc_content": 56.94,
+    "nucleotide_composition": {
+      "G": 62,
+      "A": 60,
+      "C": 61,
+      "T": 33
+    },
+    "sequence_complexity": 0.0185,
+    "average_quality_score": 30.2,
+    "quality_distribution": {
+      "high_quality": 0,
+      "medium_quality": 1,
+      "low_quality": 0
+    }
+  },
+  "conservation_assessment": {
+    "total_species_assessed": 1,
+    "threatened_species_count": 0,
+    "priority_species": [],
+    "conservation_alerts": [],
+    "conservation_priority": "Low",
+    "recommendations": []
+  },
+  "phylogenetic_analysis": {
+    "newick_tree": "(ERR15464933.128766);",
+    "families_identified": 1,
+    "family_distribution": {
+      "Unknown": [
+        "ERR15464933.128766"
+      ]
+    },
+    "tree_depth": 3,
+    "total_nodes": 1
+  },
+  "microbiome_analysis": {
+    "phylum_distribution": {
+      "Bacteroidetes": 20.6,
+      "Firmicutes": 35.3,
+      "Proteobacteria": 20.6,
+      "Actinobacteria": 10.8,
+      "Verrucomicrobia": 4.9,
+      "Others": 7.8
+    },
+    "dominant_phyla": [
+      [
+        "Firmicutes",
+        35.3
+      ],
+      [
+        "Bacteroidetes",
+        20.6
+      ],
+      [
+        "Proteobacteria",
+        20.6
+      ]
+    ],
+    "diversity_metrics": {
+      "shannon_diversity": 3.369,
+      "species_richness": 135,
+      "chao1_estimator": 174
+    },
+    "otu_analysis": {
+      "total_otus": 34,
+      "singleton_otus": 14,
+      "dominant_otus": [
+        "OTU_001",
+        "OTU_002",
+        "OTU_003",
+        "OTU_004",
+        "OTU_005"
+      ]
+    }
+  },
+  "quantum_analysis": {
+    "quantum_benchmark": {
+      "classical_time_ms": 495,
+      "quantum_time_ms": 91,
+      "speed_ratio": 1.89,
+      "quantum_advantage": true
+    },
+    "alignment_analysis": {
+      "average_alignment_score": 0.729,
+      "quantum_optimization": "Applied",
+      "backend": "AerSimulator (Local)"
+    },
+    "clustering_results": {
+      "cluster_0": 10,
+      "cluster_1": 8,
+      "cluster_2": 10
+    }
+  },
+  "protein_analysis": {
+    "protein_predictions": [
+      {
+        "sequence_id": "ERR15464933.128766",
+        "model_used": "ColabFold",
+        "confidence_score": 0.795,
+        "predicted_domains": [
+          "zinc_finger_domain"
+        ],
+        "structure_quality": "Medium"
+      }
+    ],
+    "total_structures_predicted": 1,
+    "average_confidence": 0.795
+  },
+  "processing_time": "0.00 seconds",
+  "comprehensive_report": {
+    "executive_summary": {
+      "total_sequences": 1,
+      "species_identified": 1,
+      "conservation_priority": "Low",
+      "data_quality": "Medium"
+    },
+    "key_findings": [
+      "Identified 1 unique species",
+      "Biodiversity index: -0.0",
+      "Conservation alerts: 0",
+      "Processing time: 0.00 seconds"
+    ],
+    "recommendations": [
+      "Continue regular monitoring",
+      "Implement conservation measures for threatened species",
+      "Consider additional sampling for comprehensive assessment"
+    ],
+    "data_quality_assessment": {
+      "overall_quality": "High",
+      "sequence_completeness": "Complete",
+      "classification_confidence": "High"
+    }
+  }
+}

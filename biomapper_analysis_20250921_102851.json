@@ -1,0 +1,202 @@
+{
+  "status": "success",
+  "analysis_type": "comprehensive_biodiversity_analysis",
+  "input_file": "test_biodiversity_sample.fasta",
+  "timestamp": "2025-09-21T10:28:51.269550",
+  "version": "1.0.0",
+  "sequence_statistics": {
+    "total_sequences": 2,
+    "total_base_pairs": 97,
+    "average_length": 48.5,
+    "min_length": 48,
+    "max_length": 49,
+    "median_length": 48.5,
+    "std_deviation": 0.5
+  },
+  "species_classification": [
+    {
+      "sequence_id": "Sample1",
+      "predicted_species": "Ursus americanus",
+      "common_name": "American Black Bear",
+      "confidence": 0.905,
+      "novelty_score": 0.141,
+      "local_db_match": true,
+      "iucn_status": "Least Concern",
+      "classification_method": "pattern_matching",
+      "family": "Ursidae",
+      "order": "Carnivora",
+      "habitat": "Forests, mountains"
+    },
+    {
+      "sequence_id": "Sample2",
+      "predicted_species": "Mus musculus",
+      "common_name": "House Mouse",
+      "confidence": 0.864,
+      "novelty_score": 0.179,
+      "local_db_match": true,
+      "iucn_status": "Least Concern",
+      "classification_method": "pattern_matching",
+      "family": "Muridae",
+      "order": "Rodentia",
+      "habitat": "Urban, rural"
+    }
+  ],
+  "biodiversity_metrics": {
+    "species_richness": 2,
+    "shannon_diversity_index": 0.6931,
+    "pielou_evenness": 1.0,
+    "simpson_index": 0.5,
+    "chao1_estimator": 2,
+    "species_abundance": {
+      "Ursus americanus": 1,
+      "Mus musculus": 1
+    },
+    "dominant_species": "Ursus americanus",
+    "rarest_species": "Ursus americanus"
+  },
+  "quality_analysis": {
+    "gc_content": 50.52,
+    "nucleotide_composition": {
+      "A": 24,
+      "T": 24,
+      "G": 25,
+      "C": 24
+    },
+    "sequence_complexity": 0.0412,
+    "average_quality_score": 32.2,
+    "quality_distribution": {
+      "high_quality": 1,
+      "medium_quality": 1,
+      "low_quality": 0
+    }
+  },
+  "conservation_assessment": {
+    "total_species_assessed": 2,
+    "threatened_species_count": 0,
+    "priority_species": [],
+    "conservation_alerts": [],
+    "conservation_priority": "Low",
+    "recommendations": []
+  },
+  "phylogenetic_analysis": {
+    "newick_tree": "(Sample1,Sample2);",
+    "families_identified": 2,
+    "family_distribution": {
+      "Ursidae": [
+        "Sample1"
+      ],
+      "Muridae": [
+        "Sample2"
+      ]
+    },
+    "tree_depth": 3,
+    "total_nodes": 2
+  },
+  "microbiome_analysis": {
+    "phylum_distribution": {
+      "Bacteroidetes": 20.2,
+      "Firmicutes": 26.3,
+      "Proteobacteria": 22.2,
+      "Actinobacteria": 16.2,
+      "Verrucomicrobia": 9.1,
+      "Others": 6.1
+    },
+    "dominant_phyla": [
+      [
+        "Firmicutes",
+        26.3
+      ],
+      [
+        "Proteobacteria",
+        22.2
+      ],
+      [
+        "Bacteroidetes",
+        20.2
+      ]
+    ],
+    "diversity_metrics": {
+      "shannon_diversity": 3.254,
+      "species_richness": 149,
+      "chao1_estimator": 107
+    },
+    "otu_analysis": {
+      "total_otus": 74,
+      "singleton_otus": 12,
+      "dominant_otus": [
+        "OTU_001",
+        "OTU_002",
+        "OTU_003",
+        "OTU_004",
+        "OTU_005"
+      ]
+    }
+  },
+  "quantum_analysis": {
+    "quantum_benchmark": {
+      "classical_time_ms": 205,
+      "quantum_time_ms": 143,
+      "speed_ratio": 2.38,
+      "quantum_advantage": true
+    },
+    "alignment_analysis": {
+      "average_alignment_score": 0.92,
+      "quantum_optimization": "Applied",
+      "backend": "AerSimulator (Local)"
+    },
+    "clustering_results": {
+      "cluster_0": 13,
+      "cluster_1": 11,
+      "cluster_2": 7
+    }
+  },
+  "protein_analysis": {
+    "protein_predictions": [
+      {
+        "sequence_id": "Sample1",
+        "model_used": "ColabFold",
+        "confidence_score": 0.77,
+        "predicted_domains": [
+          "nuclear_localization_signal"
+        ],
+        "structure_quality": "High"
+      },
+      {
+        "sequence_id": "Sample2",
+        "model_used": "ColabFold",
+        "confidence_score": 0.742,
+        "predicted_domains": [
+          "nuclear_localization_signal"
+        ],
+        "structure_quality": "Medium"
+      }
+    ],
+    "total_structures_predicted": 2,
+    "average_confidence": 0.756
+  },
+  "processing_time": "0.02 seconds",
+  "comprehensive_report": {
+    "executive_summary": {
+      "total_sequences": 2,
+      "species_identified": 2,
+      "conservation_priority": "Low",
+      "data_quality": "Medium"
+    },
+    "key_findings": [
+      "Identified 2 unique species",
+      "Biodiversity index: 0.6931",
+      "Conservation alerts: 0",
+      "Processing time: 0.02 seconds"
+    ],
+    "recommendations": [
+      "Continue regular monitoring",
+      "Implement conservation measures for threatened species",
+      "Consider additional sampling for comprehensive assessment"
+    ],
+    "data_quality_assessment": {
+      "overall_quality": "High",
+      "sequence_completeness": "Complete",
+      "classification_confidence": "High"
+    }
+  }
+}
