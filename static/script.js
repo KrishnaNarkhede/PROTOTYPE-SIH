@@ -174,28 +174,32 @@ function displayResults(data) {
     `;
     
     // Species Classification
-    const species = data.species_classification.slice(0, 10); // Show first 10
+    const species = data.species_classification; // Show all species
     const speciesTableHtml = `
-        <table class="species-table">
-            <thead>
-                <tr>
-                    <th>Sequence ID</th>
-                    <th>Species</th>
-                    <th>Confidence</th>
-                    <th>IUCN Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                ${species.map(s => `
+        <div class="table-container">
+            <table class="species-table">
+                <thead>
                     <tr>
-                        <td>${s.sequence_id}</td>
-                        <td>${s.predicted_species}</td>
-                        <td>${(s.confidence * 100).toFixed(1)}%</td>
-                        <td>${s.iucn_status}</td>
+                        <th>Sequence ID</th>
+                        <th>Scientific Name</th>
+                        <th>Common Name</th>
+                        <th>Confidence</th>
+                        <th>IUCN Status</th>
                     </tr>
-                `).join('')}
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    ${species.map(s => `
+                        <tr>
+                            <td>${s.sequence_id}</td>
+                            <td>${s.predicted_species}</td>
+                            <td>${s.common_name || 'Unknown'}</td>
+                            <td>${(s.confidence * 100).toFixed(1)}%</td>
+                            <td>${s.iucn_status}</td>
+                        </tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        </div>
     `;
     document.getElementById('speciesClassification').innerHTML = speciesTableHtml;
     
