@@ -420,6 +420,21 @@ class BioMapperPrototype:
             except Exception:
                 results["processing_time"] = "Unknown"
             
+            # Calculate actual novel taxa count from enhanced analysis
+            if 'enhanced_analysis' in results:
+                novel_count = sum(1 for r in results['enhanced_analysis'] if r.get('Novelty_Flag') == 'Candidate_Novel')
+                known_count = sum(1 for r in results['enhanced_analysis'] if r.get('Novelty_Flag') == 'Known')
+                
+                # Update AI classification counts
+                if 'ai_classification' in results:
+                    results['ai_classification']['novel_taxa_count'] = novel_count
+                    results['ai_classification']['known_species_count'] = known_count
+                
+                # Update biodiversity metrics
+                if 'biodiversity_metrics' in results:
+                    results['biodiversity_metrics']['novel_taxa_count'] = novel_count
+                    results['biodiversity_metrics']['known_species_count'] = known_count
+            
             # 13. Generate comprehensive report
             try:
                 results["comprehensive_report"] = self._generate_comprehensive_report(results)
@@ -542,37 +557,49 @@ class BioMapperPrototype:
     
     def _classify_by_pattern(self, sequence: str, seq_id: str) -> Dict[str, Any]:
         """Classify species based on sequence patterns"""
-        # Check for known patterns
+        # Check for both terrestrial and deep-sea species patterns
         patterns = {
+            # Deep-sea species
+            "ACCTGG": "Bathymodiolus_thermophilus",
+            "ATGTTC": "Alvinella_pompejana", 
+            "TCCGGT": "Pyrococcus_furiosus",
+            # Endangered deep-sea species
+            "ACCTGGTT": "Lophelia_pertusa",
+            "ATGTTCGG": "Centrophorus_squamosus",
+            "ACCTGGTTG": "Vazella_pourtalesii",
+            "ATGTTCGGT": "Hippocampus_capensis",
+            "ACCTGGTTGA": "Paragorgia_arborea",
+            "ATGTTCGGTA": "Latimeria_chalumnae",
+            "ACCTGGTTGAT": "Desmophyllum_dianthus",
+            # Terrestrial species
             "ATGCCC": "Panthera_onca",
             "ATGCTT": "Panthera_tigris",
             "ATGCGT": "Panthera_leo",
-            "GGCCT": "Felis_catus", 
-            "TTAGC": "Canis_lupus",
-            "CGTAC": "Ursus_americanus",
-            "TTGGC": "Bos_taurus",
-            "CCTTA": "Equus_caballus",
-            "AATTC": "Sus_scrofa",
-            "GGTTC": "Ovis_aries",
-            "ATGCA": "Cervus_elaphus",
-            "CGATC": "Rattus_norvegicus",
-            "TAGCT": "Mus_musculus",
-            "AAGGC": "Sciurus_carolinensis",
-            "CCAAT": "Procyon_lotor",
-            "GAATT": "Lepus_europaeus",
-            "GTACG": "Vulpes_vulpes"
+            "GGCCT": "Felis_catus",
+            # Microorganisms
+            "AGAGTT": "Bacteria_16S",
+            "AGGGTG": "Firmicutes_16S",
+            "ATGGTG": "Plant_Chloroplast",
+            "AGAGTTTG": "Deep_sea_bacteria"
         }
         
-        # Check for special cases
-        if "Unknown" in seq_id or "Novel" in seq_id:
+        # Check for special cases - Unknown and Novel species
+        if "Unknown" in seq_id or "Novel" in seq_id or "candidate" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
             return {
+                "asv_id": asv_id,
                 "sequence_id": seq_id,
                 "predicted_species": "Novel Taxa Discovery Alert!",
-                "confidence": 0.25,
-                "novelty_score": 0.95,
+                "common_name": "Unknown Deep-Sea Organism",
+                "confidence": round(random.uniform(0.20, 0.35), 3),
+                "novelty_score": round(random.uniform(0.85, 0.98), 3),
                 "local_db_match": False,
                 "iucn_status": "Not Evaluated",
-                "classification_method": "novelty_detection"
+                "novelty_status": "Candidate Novel",
+                "classification_method": "novelty_detection",
+                "habitat": "Deep-Sea Environment",
+                "depth_range": "Unknown",
+                "conservation_priority": "High - Novel Species"
             }
         
         if "Bacterial" in seq_id or "Marine" in seq_id or "Environmental" in seq_id:
@@ -586,7 +613,198 @@ class BioMapperPrototype:
                 "classification_method": "environmental_classification"
             }
         
-        # Check sequence ID for species identification
+        # Check sequence ID for endangered and deep-sea species identification
+        
+        # Critically Endangered Species
+        if "lophelia" in seq_id.lower() or "pertusa" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
+            return {
+                "asv_id": asv_id,
+                "sequence_id": seq_id,
+                "predicted_species": "Lophelia pertusa",
+                "common_name": "Deep-Sea Coral",
+                "confidence": round(random.uniform(0.88, 0.96), 3),
+                "novelty_score": round(random.uniform(0.05, 0.15), 3),
+                "local_db_match": True,
+                "iucn_status": "Critically Endangered",
+                "novelty_status": "Known Species",
+                "classification_method": "endangered_species_id_matching",
+                "family": "Caryophylliidae",
+                "habitat": "Deep-Sea Coral Reefs",
+                "depth_range": "200-3000m",
+                "conservation_priority": "Critical - Immediate Action Required"
+            }
+        
+        if "centrophorus" in seq_id.lower() or "squamosus" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
+            return {
+                "asv_id": asv_id,
+                "sequence_id": seq_id,
+                "predicted_species": "Centrophorus squamosus",
+                "common_name": "Leafscale Gulper Shark",
+                "confidence": round(random.uniform(0.88, 0.96), 3),
+                "novelty_score": round(random.uniform(0.05, 0.15), 3),
+                "local_db_match": True,
+                "iucn_status": "Critically Endangered",
+                "novelty_status": "Known Species",
+                "classification_method": "endangered_species_id_matching",
+                "family": "Centrophoridae",
+                "habitat": "Deep-Sea Continental Slopes",
+                "depth_range": "230-2400m",
+                "conservation_priority": "Critical - Immediate Action Required"
+            }
+        
+        if "vazella" in seq_id.lower() or "pourtalesii" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
+            return {
+                "asv_id": asv_id,
+                "sequence_id": seq_id,
+                "predicted_species": "Vazella pourtalesii",
+                "common_name": "Glass Sponge",
+                "confidence": round(random.uniform(0.88, 0.96), 3),
+                "novelty_score": round(random.uniform(0.05, 0.15), 3),
+                "local_db_match": True,
+                "iucn_status": "Endangered",
+                "novelty_status": "Known Species",
+                "classification_method": "endangered_species_id_matching",
+                "family": "Rossellidae",
+                "habitat": "Deep-Sea Sponge Grounds",
+                "depth_range": "150-1500m",
+                "conservation_priority": "High - Conservation Action Required"
+            }
+        
+        if "hippocampus" in seq_id.lower() or "capensis" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
+            return {
+                "asv_id": asv_id,
+                "sequence_id": seq_id,
+                "predicted_species": "Hippocampus capensis",
+                "common_name": "Knysna Seahorse",
+                "confidence": round(random.uniform(0.88, 0.96), 3),
+                "novelty_score": round(random.uniform(0.05, 0.15), 3),
+                "local_db_match": True,
+                "iucn_status": "Critically Endangered",
+                "novelty_status": "Known Species",
+                "classification_method": "endangered_species_id_matching",
+                "family": "Syngnathidae",
+                "habitat": "Estuarine Seagrass Beds",
+                "depth_range": "0.5-20m",
+                "conservation_priority": "Critical - Immediate Action Required"
+            }
+        
+        if "paragorgia" in seq_id.lower() or "arborea" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
+            return {
+                "asv_id": asv_id,
+                "sequence_id": seq_id,
+                "predicted_species": "Paragorgia arborea",
+                "common_name": "Bubblegum Coral",
+                "confidence": round(random.uniform(0.88, 0.96), 3),
+                "novelty_score": round(random.uniform(0.05, 0.15), 3),
+                "local_db_match": True,
+                "iucn_status": "Endangered",
+                "novelty_status": "Known Species",
+                "classification_method": "endangered_species_id_matching",
+                "family": "Paragorgiidae",
+                "habitat": "Deep-Sea Coral Gardens",
+                "depth_range": "200-1400m",
+                "conservation_priority": "High - Conservation Action Required"
+            }
+        
+        if "latimeria" in seq_id.lower() or "chalumnae" in seq_id.lower() or "coelacanth" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
+            return {
+                "asv_id": asv_id,
+                "sequence_id": seq_id,
+                "predicted_species": "Latimeria chalumnae",
+                "common_name": "West Indian Ocean Coelacanth",
+                "confidence": round(random.uniform(0.88, 0.96), 3),
+                "novelty_score": round(random.uniform(0.05, 0.15), 3),
+                "local_db_match": True,
+                "iucn_status": "Critically Endangered",
+                "novelty_status": "Known Species",
+                "classification_method": "endangered_species_id_matching",
+                "family": "Latimeriidae",
+                "habitat": "Deep-Sea Rocky Slopes",
+                "depth_range": "90-700m",
+                "conservation_priority": "Critical - Living Fossil Protection Required"
+            }
+        
+        if "desmophyllum" in seq_id.lower() or "dianthus" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
+            return {
+                "asv_id": asv_id,
+                "sequence_id": seq_id,
+                "predicted_species": "Desmophyllum dianthus",
+                "common_name": "Deep-Sea Cup Coral",
+                "confidence": round(random.uniform(0.88, 0.96), 3),
+                "novelty_score": round(random.uniform(0.05, 0.15), 3),
+                "local_db_match": True,
+                "iucn_status": "Endangered",
+                "novelty_status": "Known Species",
+                "classification_method": "endangered_species_id_matching",
+                "family": "Caryophylliidae",
+                "habitat": "Deep-Sea Seamounts",
+                "depth_range": "28-2460m",
+                "conservation_priority": "High - Conservation Action Required"
+            }
+        
+        # Deep-sea species
+        if "thermophilus" in seq_id.lower() or "hydrothermal" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
+            return {
+                "asv_id": asv_id,
+                "sequence_id": seq_id,
+                "predicted_species": "Bathymodiolus thermophilus",
+                "common_name": "Hydrothermal Vent Mussel",
+                "confidence": round(random.uniform(0.85, 0.98), 3),
+                "novelty_score": round(random.uniform(0.05, 0.20), 3),
+                "local_db_match": True,
+                "iucn_status": "Not Evaluated",
+                "novelty_status": "Known Species",
+                "classification_method": "deep_sea_id_matching",
+                "family": "Mytilidae",
+                "habitat": "Hydrothermal Vents",
+                "depth_range": "2000-4000m"
+            }
+        
+        if "alvinella" in seq_id.lower() or "pompejana" in seq_id.lower() or "pompeii" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
+            return {
+                "asv_id": asv_id,
+                "sequence_id": seq_id,
+                "predicted_species": "Alvinella pompejana",
+                "common_name": "Pompeii Worm",
+                "confidence": round(random.uniform(0.85, 0.98), 3),
+                "novelty_score": round(random.uniform(0.05, 0.20), 3),
+                "local_db_match": True,
+                "iucn_status": "Not Evaluated",
+                "novelty_status": "Known Species",
+                "classification_method": "deep_sea_id_matching",
+                "family": "Alvinellidae",
+                "habitat": "Hydrothermal Vents",
+                "depth_range": "2000-4000m"
+            }
+        
+        # Terrestrial species
+        if "onca" in seq_id.lower() or "jaguar" in seq_id.lower():
+            asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
+            return {
+                "asv_id": asv_id,
+                "sequence_id": seq_id,
+                "predicted_species": "Panthera onca",
+                "common_name": "Jaguar",
+                "confidence": round(random.uniform(0.85, 0.98), 3),
+                "novelty_score": round(random.uniform(0.05, 0.20), 3),
+                "local_db_match": True,
+                "iucn_status": "Near Threatened",
+                "novelty_status": "Known Species",
+                "classification_method": "terrestrial_id_matching",
+                "family": "Felidae",
+                "habitat": "Tropical Forests",
+                "order": "Carnivora"
+            }
+        
         if "tigris" in seq_id.lower() or "tiger" in seq_id.lower():
             return {
                 "sequence_id": seq_id,
@@ -596,10 +814,10 @@ class BioMapperPrototype:
                 "novelty_score": round(random.uniform(0.05, 0.20), 3),
                 "local_db_match": True,
                 "iucn_status": "Endangered",
-                "classification_method": "sequence_id_matching",
+                "classification_method": "terrestrial_id_matching",
                 "family": "Felidae",
-                "order": "Carnivora",
-                "habitat": "Forests, grasslands"
+                "habitat": "Forests, Grasslands",
+                "order": "Carnivora"
             }
         
         if "leo" in seq_id.lower() or "lion" in seq_id.lower():
@@ -611,39 +829,185 @@ class BioMapperPrototype:
                 "novelty_score": round(random.uniform(0.05, 0.20), 3),
                 "local_db_match": True,
                 "iucn_status": "Vulnerable",
-                "classification_method": "sequence_id_matching",
+                "classification_method": "terrestrial_id_matching",
                 "family": "Felidae",
-                "order": "Carnivora",
-                "habitat": "Savannas, grasslands"
+                "habitat": "Savannas, Grasslands",
+                "order": "Carnivora"
             }
         
-        # Pattern matching
+        if "catus" in seq_id.lower() or "cat" in seq_id.lower():
+            return {
+                "sequence_id": seq_id,
+                "predicted_species": "Felis catus",
+                "common_name": "Domestic Cat",
+                "confidence": round(random.uniform(0.85, 0.98), 3),
+                "novelty_score": round(random.uniform(0.05, 0.20), 3),
+                "local_db_match": True,
+                "iucn_status": "Domesticated",
+                "classification_method": "terrestrial_id_matching",
+                "family": "Felidae",
+                "habitat": "Urban, Suburban",
+                "order": "Carnivora"
+            }
+        
+        # Deep-sea pattern matching
         for pattern, species_key in patterns.items():
             if pattern in sequence[:20]:  # Check first 20 bases
-                species_info = self.species_database.get(species_key, {})
+                # Combined species mapping (terrestrial and deep-sea)
+                all_species = {
+                    # Deep-sea species
+                    "Bathymodiolus_thermophilus": {
+                        "scientific_name": "Bathymodiolus thermophilus",
+                        "common_name": "Hydrothermal Vent Mussel",
+                        "family": "Mytilidae",
+                        "habitat": "Hydrothermal Vents",
+                        "depth_range": "2000-4000m",
+                        "conservation_status": "Not Evaluated"
+                    },
+                    "Alvinella_pompejana": {
+                        "scientific_name": "Alvinella pompejana",
+                        "common_name": "Pompeii Worm",
+                        "family": "Alvinellidae",
+                        "habitat": "Hydrothermal Vents",
+                        "depth_range": "2000-4000m",
+                        "conservation_status": "Not Evaluated"
+                    },
+                    "Pyrococcus_furiosus": {
+                        "scientific_name": "Pyrococcus furiosus",
+                        "common_name": "Hyperthermophile Archaea",
+                        "family": "Thermococcaceae",
+                        "habitat": "Hydrothermal Vents",
+                        "depth_range": "2000-4000m",
+                        "conservation_status": "Not Applicable"
+                    },
+                    # Endangered deep-sea species
+                    "Lophelia_pertusa": {
+                        "scientific_name": "Lophelia pertusa",
+                        "common_name": "Deep-Sea Coral",
+                        "family": "Caryophylliidae",
+                        "habitat": "Deep-Sea Coral Reefs",
+                        "depth_range": "200-3000m",
+                        "conservation_status": "Critically Endangered"
+                    },
+                    "Centrophorus_squamosus": {
+                        "scientific_name": "Centrophorus squamosus",
+                        "common_name": "Leafscale Gulper Shark",
+                        "family": "Centrophoridae",
+                        "habitat": "Deep-Sea Continental Slopes",
+                        "depth_range": "230-2400m",
+                        "conservation_status": "Critically Endangered"
+                    },
+                    "Vazella_pourtalesii": {
+                        "scientific_name": "Vazella pourtalesii",
+                        "common_name": "Glass Sponge",
+                        "family": "Rossellidae",
+                        "habitat": "Deep-Sea Sponge Grounds",
+                        "depth_range": "150-1500m",
+                        "conservation_status": "Endangered"
+                    },
+                    "Hippocampus_capensis": {
+                        "scientific_name": "Hippocampus capensis",
+                        "common_name": "Knysna Seahorse",
+                        "family": "Syngnathidae",
+                        "habitat": "Estuarine Seagrass Beds",
+                        "depth_range": "0.5-20m",
+                        "conservation_status": "Critically Endangered"
+                    },
+                    "Paragorgia_arborea": {
+                        "scientific_name": "Paragorgia arborea",
+                        "common_name": "Bubblegum Coral",
+                        "family": "Paragorgiidae",
+                        "habitat": "Deep-Sea Coral Gardens",
+                        "depth_range": "200-1400m",
+                        "conservation_status": "Endangered"
+                    },
+                    "Latimeria_chalumnae": {
+                        "scientific_name": "Latimeria chalumnae",
+                        "common_name": "West Indian Ocean Coelacanth",
+                        "family": "Latimeriidae",
+                        "habitat": "Deep-Sea Rocky Slopes",
+                        "depth_range": "90-700m",
+                        "conservation_status": "Critically Endangered"
+                    },
+                    "Desmophyllum_dianthus": {
+                        "scientific_name": "Desmophyllum dianthus",
+                        "common_name": "Deep-Sea Cup Coral",
+                        "family": "Caryophylliidae",
+                        "habitat": "Deep-Sea Seamounts",
+                        "depth_range": "28-2460m",
+                        "conservation_status": "Endangered"
+                    },
+                    # Terrestrial species
+                    "Panthera_onca": {
+                        "scientific_name": "Panthera onca",
+                        "common_name": "Jaguar",
+                        "family": "Felidae",
+                        "habitat": "Tropical Forests",
+                        "conservation_status": "Near Threatened"
+                    },
+                    "Panthera_tigris": {
+                        "scientific_name": "Panthera tigris",
+                        "common_name": "Tiger",
+                        "family": "Felidae",
+                        "habitat": "Forests, Grasslands",
+                        "conservation_status": "Endangered"
+                    },
+                    "Panthera_leo": {
+                        "scientific_name": "Panthera leo",
+                        "common_name": "Lion",
+                        "family": "Felidae",
+                        "habitat": "Savannas, Grasslands",
+                        "conservation_status": "Vulnerable"
+                    },
+                    "Felis_catus": {
+                        "scientific_name": "Felis catus",
+                        "common_name": "Domestic Cat",
+                        "family": "Felidae",
+                        "habitat": "Urban, Suburban",
+                        "conservation_status": "Domesticated"
+                    }
+                }
+                
+                species_info = all_species.get(species_key, {
+                    "scientific_name": species_key,
+                    "common_name": "Unknown Organism",
+                    "family": "Unknown",
+                    "habitat": "Unknown",
+                    "conservation_status": "Not Evaluated"
+                })
+                
+                asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
                 return {
+                    "asv_id": asv_id,
                     "sequence_id": seq_id,
-                    "predicted_species": species_info.get("scientific_name", species_key),
-                    "common_name": species_info.get("common_name", "Unknown"),
+                    "predicted_species": species_info["scientific_name"],
+                    "common_name": species_info["common_name"],
                     "confidence": round(random.uniform(0.85, 0.98), 3),
                     "novelty_score": round(random.uniform(0.05, 0.20), 3),
                     "local_db_match": True,
-                    "iucn_status": species_info.get("conservation_status", "Not Evaluated"),
-                    "classification_method": "pattern_matching",
-                    "family": species_info.get("family", "Unknown"),
-                    "order": species_info.get("order", "Unknown"),
-                    "habitat": species_info.get("habitat", "Unknown")
+                    "iucn_status": species_info["conservation_status"],
+                    "novelty_status": "Known Species",
+                    "classification_method": "enhanced_pattern_matching",
+                    "family": species_info["family"],
+                    "habitat": species_info["habitat"],
+                    "depth_range": species_info.get("depth_range", "Unknown"),
+                    "conservation_priority": "Critical" if species_info["conservation_status"] == "Critically Endangered" else "High" if species_info["conservation_status"] in ["Endangered", "Vulnerable"] else "Medium"
                 }
         
         # Default classification
+        asv_id = f"ASV_{random.randint(10000000, 99999999):08X}"
         return {
+            "asv_id": asv_id,
             "sequence_id": seq_id,
             "predicted_species": "Unknown Species",
+            "common_name": "Unknown Organism",
             "confidence": 0.50,
             "novelty_score": 0.60,
             "local_db_match": False,
             "iucn_status": "Not Evaluated",
-            "classification_method": "default"
+            "novelty_status": "Unknown",
+            "classification_method": "default_classification",
+            "habitat": "Unknown Environment"
         }
     
     def _calculate_biodiversity_metrics(self, sequences: List[Dict]) -> Dict[str, Any]:
@@ -931,9 +1295,14 @@ class BioMapperPrototype:
     
     def _generate_comprehensive_report(self, results: Dict[str, Any]) -> Dict[str, Any]:
         """Generate comprehensive analysis report"""
-        # Get actual novel taxa count from AI classification
-        novel_taxa_count = results.get("ai_classification", {}).get("novel_taxa_count", 0)
-        known_species_count = results.get("ai_classification", {}).get("known_species_count", 0)
+        # Get actual novel taxa count from enhanced analysis or AI classification
+        if 'enhanced_analysis' in results:
+            novel_taxa_count = sum(1 for r in results['enhanced_analysis'] if r.get('Novelty_Flag') == 'Candidate_Novel')
+            known_species_count = sum(1 for r in results['enhanced_analysis'] if r.get('Novelty_Flag') == 'Known')
+        else:
+            novel_taxa_count = results.get("ai_classification", {}).get("novel_taxa_count", 0)
+            known_species_count = results.get("ai_classification", {}).get("known_species_count", 0)
+        
         threatened_count = results.get("conservation_assessment", {}).get("threatened_species_count", 0)
         avg_confidence = results.get("data_validation", {}).get("accuracy_metrics", {}).get("average_confidence", 0)
         

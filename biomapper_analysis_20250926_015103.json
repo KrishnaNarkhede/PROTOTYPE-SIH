@@ -1,0 +1,3938 @@
+{
+  "status": "success",
+  "analysis_type": "comprehensive_biodiversity_analysis",
+  "input_file": "deepsea_edna_sample.fasta",
+  "timestamp": "2025-09-26T01:50:55.220451",
+  "version": "2.0.0",
+  "sequence_statistics": {
+    "total_sequences": 13,
+    "total_base_pairs": 17291,
+    "average_length": 1330.076923076923,
+    "min_length": 609,
+    "max_length": 1816,
+    "median_length": 1816.0,
+    "std_deviation": 574.7369246397683
+  },
+  "data_validation": {
+    "total_sequences": 13,
+    "validation_summary": {},
+    "accuracy_metrics": {
+      "average_confidence": 0.93,
+      "high_confidence_count": 13,
+      "medium_confidence_count": 0,
+      "low_confidence_count": 0,
+      "confidence_distribution": {
+        "min": 0.8116,
+        "max": 1.0,
+        "std": 0.089
+      }
+    },
+    "data_quality_issues": [],
+    "recommendations": []
+  },
+  "enhanced_analysis": [
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.063447,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 5,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.74851,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.062759,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 5,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7508033333333334,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_91E85DDB",
+      "OTU_ID": "OTU_91E85DDB",
+      "Representative_Sequence": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTTAAGAATGGATCAAATAAATTATATTAATACTGCTCATGCTTTTATTATAATTTTTTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGATTAATTCCTTTAATATTAGGAGCTCCTGATATAGCTTTTCCTCGAATAAATAATATAAGATTTTGATTATTACCTCCTTCTTTAACTTTATTAATTTCAAGAAGAATTGTAGAAAATGGAGCAGGAACTGGATGAACTGTTTATCCTCCTTTATCTTCTAATATTGCTCATGGAGGTTCTTCTGTTGATTTAGCTATTTTTTCTTTACATTTAGCTGGAATTTCTTCTATTTTAGGAGCTATTAATTTTATTACTACTATTATTAATATACGAATTAATAATATATCTTTTGATCAAATACCTTTATTTGTTTGATCTGTAGGAATTACTGCTTTATTATTATTACTTTCTTTACCTGTATTAGCTGGAGCTATTACTATATTATTAACTGATCGAAATTTAAATACTTCTTTTTTTGATCCTGCTGGAGGAGGAGATCCAATTTTATATCAACATTTATTT",
+      "Sequence_Length": 609,
+      "GC_Content": 26.11,
+      "Sample_IDs": [
+        "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Alvinella pompejana",
+      "Common_Name": "Pompeii Worm",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_002",
+      "Percent_Identity_to_Nearest": 94.5,
+      "Assignment_Confidence": 0.8116,
+      "Kingdom": "Animalia",
+      "Phylum": "Annelida",
+      "Class": "Polychaeta",
+      "Order": "Terebellida",
+      "Family": "Alvinellidae",
+      "Genus": "Alvinella",
+      "Species": "Alvinella pompejana",
+      "Phylo_Placement_Node": "NODE_08890",
+      "Branch_Length_to_placement": 0.093099,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "chemosynthetic_symbiont",
+      "Predicted_Functions": [
+        "extreme_thermophile",
+        "bacterial_symbiosis",
+        "tube_dwelling"
+      ],
+      "Role_Confidence": 0.91,
+      "Novelty_Score": 0.7,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 0.7,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": true,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_090",
+      "Cluster_Members": 5,
+      "Cluster_Representative": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTT...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "High",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.91,
+        "enhanced_confidence": 0.8116,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7200000000000001,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9975,
+          "statistical": 0.7
+        },
+        "enhancement_factor": 0.8918681318681319
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.139796,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 2,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7266666666666667,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_91E85DDB",
+      "OTU_ID": "OTU_91E85DDB",
+      "Representative_Sequence": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTTAAGAATGGATCAAATAAATTATATTAATACTGCTCATGCTTTTATTATAATTTTTTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGATTAATTCCTTTAATATTAGGAGCTCCTGATATAGCTTTTCCTCGAATAAATAATATAAGATTTTGATTATTACCTCCTTCTTTAACTTTATTAATTTCAAGAAGAATTGTAGAAAATGGAGCAGGAACTGGATGAACTGTTTATCCTCCTTTATCTTCTAATATTGCTCATGGAGGTTCTTCTGTTGATTTAGCTATTTTTTCTTTACATTTAGCTGGAATTTCTTCTATTTTAGGAGCTATTAATTTTATTACTACTATTATTAATATACGAATTAATAATATATCTTTTGATCAAATACCTTTATTTGTTTGATCTGTAGGAATTACTGCTTTATTATTATTACTTTCTTTACCTGTATTAGCTGGAGCTATTACTATATTATTAACTGATCGAAATTTAAATACTTCTTTTTTTGATCCTGCTGGAGGAGGAGATCCAATTTTATATCAACATTTATTT",
+      "Sequence_Length": 609,
+      "GC_Content": 26.11,
+      "Sample_IDs": [
+        "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Alvinella pompejana",
+      "Common_Name": "Pompeii Worm",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_002",
+      "Percent_Identity_to_Nearest": 94.5,
+      "Assignment_Confidence": 0.8116,
+      "Kingdom": "Animalia",
+      "Phylum": "Annelida",
+      "Class": "Polychaeta",
+      "Order": "Terebellida",
+      "Family": "Alvinellidae",
+      "Genus": "Alvinella",
+      "Species": "Alvinella pompejana",
+      "Phylo_Placement_Node": "NODE_08890",
+      "Branch_Length_to_placement": 0.073133,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "chemosynthetic_symbiont",
+      "Predicted_Functions": [
+        "extreme_thermophile",
+        "bacterial_symbiosis",
+        "tube_dwelling"
+      ],
+      "Role_Confidence": 0.91,
+      "Novelty_Score": 0.7,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 0.7,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": true,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_090",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTT...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "High",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.91,
+        "enhanced_confidence": 0.8116,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7200000000000001,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9975,
+          "statistical": 0.7
+        },
+        "enhancement_factor": 0.8918681318681319
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.009667,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.9277766666666666,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_91E85DDB",
+      "OTU_ID": "OTU_91E85DDB",
+      "Representative_Sequence": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTTAAGAATGGATCAAATAAATTATATTAATACTGCTCATGCTTTTATTATAATTTTTTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGATTAATTCCTTTAATATTAGGAGCTCCTGATATAGCTTTTCCTCGAATAAATAATATAAGATTTTGATTATTACCTCCTTCTTTAACTTTATTAATTTCAAGAAGAATTGTAGAAAATGGAGCAGGAACTGGATGAACTGTTTATCCTCCTTTATCTTCTAATATTGCTCATGGAGGTTCTTCTGTTGATTTAGCTATTTTTTCTTTACATTTAGCTGGAATTTCTTCTATTTTAGGAGCTATTAATTTTATTACTACTATTATTAATATACGAATTAATAATATATCTTTTGATCAAATACCTTTATTTGTTTGATCTGTAGGAATTACTGCTTTATTATTATTACTTTCTTTACCTGTATTAGCTGGAGCTATTACTATATTATTAACTGATCGAAATTTAAATACTTCTTTTTTTGATCCTGCTGGAGGAGGAGATCCAATTTTATATCAACATTTATTT",
+      "Sequence_Length": 609,
+      "GC_Content": 26.11,
+      "Sample_IDs": [
+        "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Alvinella pompejana",
+      "Common_Name": "Pompeii Worm",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_002",
+      "Percent_Identity_to_Nearest": 94.5,
+      "Assignment_Confidence": 0.8116,
+      "Kingdom": "Animalia",
+      "Phylum": "Annelida",
+      "Class": "Polychaeta",
+      "Order": "Terebellida",
+      "Family": "Alvinellidae",
+      "Genus": "Alvinella",
+      "Species": "Alvinella pompejana",
+      "Phylo_Placement_Node": "NODE_08890",
+      "Branch_Length_to_placement": 0.148399,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "chemosynthetic_symbiont",
+      "Predicted_Functions": [
+        "extreme_thermophile",
+        "bacterial_symbiosis",
+        "tube_dwelling"
+      ],
+      "Role_Confidence": 0.91,
+      "Novelty_Score": 0.7,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 0.7,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": true,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_090",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTT...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "High",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.91,
+        "enhanced_confidence": 0.8116,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7200000000000001,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9975,
+          "statistical": 0.7
+        },
+        "enhancement_factor": 0.8918681318681319
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.081536,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7266666666666667,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_91E85DDB",
+      "OTU_ID": "OTU_91E85DDB",
+      "Representative_Sequence": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTTAAGAATGGATCAAATAAATTATATTAATACTGCTCATGCTTTTATTATAATTTTTTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGATTAATTCCTTTAATATTAGGAGCTCCTGATATAGCTTTTCCTCGAATAAATAATATAAGATTTTGATTATTACCTCCTTCTTTAACTTTATTAATTTCAAGAAGAATTGTAGAAAATGGAGCAGGAACTGGATGAACTGTTTATCCTCCTTTATCTTCTAATATTGCTCATGGAGGTTCTTCTGTTGATTTAGCTATTTTTTCTTTACATTTAGCTGGAATTTCTTCTATTTTAGGAGCTATTAATTTTATTACTACTATTATTAATATACGAATTAATAATATATCTTTTGATCAAATACCTTTATTTGTTTGATCTGTAGGAATTACTGCTTTATTATTATTACTTTCTTTACCTGTATTAGCTGGAGCTATTACTATATTATTAACTGATCGAAATTTAAATACTTCTTTTTTTGATCCTGCTGGAGGAGGAGATCCAATTTTATATCAACATTTATTT",
+      "Sequence_Length": 609,
+      "GC_Content": 26.11,
+      "Sample_IDs": [
+        "Alvinella_pompejana_COI_hydrothermal_vent_polychaete"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Alvinella pompejana",
+      "Common_Name": "Pompeii Worm",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_002",
+      "Percent_Identity_to_Nearest": 94.5,
+      "Assignment_Confidence": 0.8371,
+      "Kingdom": "Animalia",
+      "Phylum": "Annelida",
+      "Class": "Polychaeta",
+      "Order": "Terebellida",
+      "Family": "Alvinellidae",
+      "Genus": "Alvinella",
+      "Species": "Alvinella pompejana",
+      "Phylo_Placement_Node": "NODE_08890",
+      "Branch_Length_to_placement": 0.029321,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "chemosynthetic_symbiont",
+      "Predicted_Functions": [
+        "extreme_thermophile",
+        "bacterial_symbiosis",
+        "tube_dwelling"
+      ],
+      "Role_Confidence": 0.91,
+      "Novelty_Score": 0.7,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 0.7,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": true,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_090",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTT...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "High",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.91,
+        "enhanced_confidence": 0.8371,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.8555966666666667,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9975,
+          "statistical": 0.7
+        },
+        "enhancement_factor": 0.9198901098901098
+      }
+    },
+    {
+      "ASV_ID": "ASV_705F3C0E",
+      "OTU_ID": "OTU_705F3C0E",
+      "Representative_Sequence": "AGAGTTTGATCCTGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGAAGCTTGCTCTTTGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTAGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCGGATGTGCCCAGATGGGATTAGCTAGTAGGTGGGGTAACGGCTCACCTAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGGAGTAAAGTTAATACCTTTGCTCATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTTTGTTAAGTCAGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCTGATACTGGCAAGCTTGAGTCTCGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACGAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACGGAAGTTTTCAGAGATGAGAATGTGCCTTCGGGAACCGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGGTCCGGCCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTA",
+      "Sequence_Length": 1534,
+      "GC_Content": 54.69,
+      "Sample_IDs": [
+        "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_04721",
+      "Branch_Length_to_placement": 0.056108,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Bacteria_Proteobacteria_Gammaproteobacteria",
+      "Placement_Taxonomic_Hint": "Bacteria;Proteobacteria;Gammaproteobacteria",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_021",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "AGAGTTTGATCCTGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATG...",
+      "First_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Last_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7729733333333333,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_91E85DDB",
+      "OTU_ID": "OTU_91E85DDB",
+      "Representative_Sequence": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTTAAGAATGGATCAAATAAATTATATTAATACTGCTCATGCTTTTATTATAATTTTTTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGATTAATTCCTTTAATATTAGGAGCTCCTGATATAGCTTTTCCTCGAATAAATAATATAAGATTTTGATTATTACCTCCTTCTTTAACTTTATTAATTTCAAGAAGAATTGTAGAAAATGGAGCAGGAACTGGATGAACTGTTTATCCTCCTTTATCTTCTAATATTGCTCATGGAGGTTCTTCTGTTGATTTAGCTATTTTTTCTTTACATTTAGCTGGAATTTCTTCTATTTTAGGAGCTATTAATTTTATTACTACTATTATTAATATACGAATTAATAATATATCTTTTGATCAAATACCTTTATTTGTTTGATCTGTAGGAATTACTGCTTTATTATTATTACTTTCTTTACCTGTATTAGCTGGAGCTATTACTATATTATTAACTGATCGAAATTTAAATACTTCTTTTTTTGATCCTGCTGGAGGAGGAGATCCAATTTTATATCAACATTTATTT",
+      "Sequence_Length": 609,
+      "GC_Content": 26.11,
+      "Sample_IDs": [
+        "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Alvinella pompejana",
+      "Common_Name": "Pompeii Worm",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_002",
+      "Percent_Identity_to_Nearest": 94.5,
+      "Assignment_Confidence": 0.8179,
+      "Kingdom": "Animalia",
+      "Phylum": "Annelida",
+      "Class": "Polychaeta",
+      "Order": "Terebellida",
+      "Family": "Alvinellidae",
+      "Genus": "Alvinella",
+      "Species": "Alvinella pompejana",
+      "Phylo_Placement_Node": "NODE_08890",
+      "Branch_Length_to_placement": 0.060728,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "chemosynthetic_symbiont",
+      "Predicted_Functions": [
+        "extreme_thermophile",
+        "bacterial_symbiosis",
+        "tube_dwelling"
+      ],
+      "Role_Confidence": 0.91,
+      "Novelty_Score": 0.7,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 0.7,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": true,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_090",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTT...",
+      "First_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Last_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "High",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.91,
+        "enhanced_confidence": 0.8179,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7509066666666667,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9975,
+          "statistical": 0.7
+        },
+        "enhancement_factor": 0.8987912087912087
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.002565,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 2,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Last_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.95145,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.090417,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Last_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7266666666666667,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    }
+  ],
+  "species_classification": [
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.063447,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 5,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.74851,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.062759,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 5,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7508033333333334,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_91E85DDB",
+      "OTU_ID": "OTU_91E85DDB",
+      "Representative_Sequence": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTTAAGAATGGATCAAATAAATTATATTAATACTGCTCATGCTTTTATTATAATTTTTTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGATTAATTCCTTTAATATTAGGAGCTCCTGATATAGCTTTTCCTCGAATAAATAATATAAGATTTTGATTATTACCTCCTTCTTTAACTTTATTAATTTCAAGAAGAATTGTAGAAAATGGAGCAGGAACTGGATGAACTGTTTATCCTCCTTTATCTTCTAATATTGCTCATGGAGGTTCTTCTGTTGATTTAGCTATTTTTTCTTTACATTTAGCTGGAATTTCTTCTATTTTAGGAGCTATTAATTTTATTACTACTATTATTAATATACGAATTAATAATATATCTTTTGATCAAATACCTTTATTTGTTTGATCTGTAGGAATTACTGCTTTATTATTATTACTTTCTTTACCTGTATTAGCTGGAGCTATTACTATATTATTAACTGATCGAAATTTAAATACTTCTTTTTTTGATCCTGCTGGAGGAGGAGATCCAATTTTATATCAACATTTATTT",
+      "Sequence_Length": 609,
+      "GC_Content": 26.11,
+      "Sample_IDs": [
+        "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Alvinella pompejana",
+      "Common_Name": "Pompeii Worm",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_002",
+      "Percent_Identity_to_Nearest": 94.5,
+      "Assignment_Confidence": 0.8116,
+      "Kingdom": "Animalia",
+      "Phylum": "Annelida",
+      "Class": "Polychaeta",
+      "Order": "Terebellida",
+      "Family": "Alvinellidae",
+      "Genus": "Alvinella",
+      "Species": "Alvinella pompejana",
+      "Phylo_Placement_Node": "NODE_08890",
+      "Branch_Length_to_placement": 0.093099,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "chemosynthetic_symbiont",
+      "Predicted_Functions": [
+        "extreme_thermophile",
+        "bacterial_symbiosis",
+        "tube_dwelling"
+      ],
+      "Role_Confidence": 0.91,
+      "Novelty_Score": 0.7,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 0.7,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": true,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_090",
+      "Cluster_Members": 5,
+      "Cluster_Representative": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTT...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "High",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.91,
+        "enhanced_confidence": 0.8116,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7200000000000001,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9975,
+          "statistical": 0.7
+        },
+        "enhancement_factor": 0.8918681318681319
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.139796,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 2,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7266666666666667,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_91E85DDB",
+      "OTU_ID": "OTU_91E85DDB",
+      "Representative_Sequence": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTTAAGAATGGATCAAATAAATTATATTAATACTGCTCATGCTTTTATTATAATTTTTTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGATTAATTCCTTTAATATTAGGAGCTCCTGATATAGCTTTTCCTCGAATAAATAATATAAGATTTTGATTATTACCTCCTTCTTTAACTTTATTAATTTCAAGAAGAATTGTAGAAAATGGAGCAGGAACTGGATGAACTGTTTATCCTCCTTTATCTTCTAATATTGCTCATGGAGGTTCTTCTGTTGATTTAGCTATTTTTTCTTTACATTTAGCTGGAATTTCTTCTATTTTAGGAGCTATTAATTTTATTACTACTATTATTAATATACGAATTAATAATATATCTTTTGATCAAATACCTTTATTTGTTTGATCTGTAGGAATTACTGCTTTATTATTATTACTTTCTTTACCTGTATTAGCTGGAGCTATTACTATATTATTAACTGATCGAAATTTAAATACTTCTTTTTTTGATCCTGCTGGAGGAGGAGATCCAATTTTATATCAACATTTATTT",
+      "Sequence_Length": 609,
+      "GC_Content": 26.11,
+      "Sample_IDs": [
+        "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Alvinella pompejana",
+      "Common_Name": "Pompeii Worm",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_002",
+      "Percent_Identity_to_Nearest": 94.5,
+      "Assignment_Confidence": 0.8116,
+      "Kingdom": "Animalia",
+      "Phylum": "Annelida",
+      "Class": "Polychaeta",
+      "Order": "Terebellida",
+      "Family": "Alvinellidae",
+      "Genus": "Alvinella",
+      "Species": "Alvinella pompejana",
+      "Phylo_Placement_Node": "NODE_08890",
+      "Branch_Length_to_placement": 0.073133,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "chemosynthetic_symbiont",
+      "Predicted_Functions": [
+        "extreme_thermophile",
+        "bacterial_symbiosis",
+        "tube_dwelling"
+      ],
+      "Role_Confidence": 0.91,
+      "Novelty_Score": 0.7,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 0.7,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": true,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_090",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTT...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "High",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.91,
+        "enhanced_confidence": 0.8116,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7200000000000001,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9975,
+          "statistical": 0.7
+        },
+        "enhancement_factor": 0.8918681318681319
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.009667,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.9277766666666666,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_91E85DDB",
+      "OTU_ID": "OTU_91E85DDB",
+      "Representative_Sequence": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTTAAGAATGGATCAAATAAATTATATTAATACTGCTCATGCTTTTATTATAATTTTTTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGATTAATTCCTTTAATATTAGGAGCTCCTGATATAGCTTTTCCTCGAATAAATAATATAAGATTTTGATTATTACCTCCTTCTTTAACTTTATTAATTTCAAGAAGAATTGTAGAAAATGGAGCAGGAACTGGATGAACTGTTTATCCTCCTTTATCTTCTAATATTGCTCATGGAGGTTCTTCTGTTGATTTAGCTATTTTTTCTTTACATTTAGCTGGAATTTCTTCTATTTTAGGAGCTATTAATTTTATTACTACTATTATTAATATACGAATTAATAATATATCTTTTGATCAAATACCTTTATTTGTTTGATCTGTAGGAATTACTGCTTTATTATTATTACTTTCTTTACCTGTATTAGCTGGAGCTATTACTATATTATTAACTGATCGAAATTTAAATACTTCTTTTTTTGATCCTGCTGGAGGAGGAGATCCAATTTTATATCAACATTTATTT",
+      "Sequence_Length": 609,
+      "GC_Content": 26.11,
+      "Sample_IDs": [
+        "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Alvinella pompejana",
+      "Common_Name": "Pompeii Worm",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_002",
+      "Percent_Identity_to_Nearest": 94.5,
+      "Assignment_Confidence": 0.8116,
+      "Kingdom": "Animalia",
+      "Phylum": "Annelida",
+      "Class": "Polychaeta",
+      "Order": "Terebellida",
+      "Family": "Alvinellidae",
+      "Genus": "Alvinella",
+      "Species": "Alvinella pompejana",
+      "Phylo_Placement_Node": "NODE_08890",
+      "Branch_Length_to_placement": 0.148399,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "chemosynthetic_symbiont",
+      "Predicted_Functions": [
+        "extreme_thermophile",
+        "bacterial_symbiosis",
+        "tube_dwelling"
+      ],
+      "Role_Confidence": 0.91,
+      "Novelty_Score": 0.7,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 0.7,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": true,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_090",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTT...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "High",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.91,
+        "enhanced_confidence": 0.8116,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7200000000000001,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9975,
+          "statistical": 0.7
+        },
+        "enhancement_factor": 0.8918681318681319
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.081536,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7266666666666667,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_91E85DDB",
+      "OTU_ID": "OTU_91E85DDB",
+      "Representative_Sequence": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTTAAGAATGGATCAAATAAATTATATTAATACTGCTCATGCTTTTATTATAATTTTTTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGATTAATTCCTTTAATATTAGGAGCTCCTGATATAGCTTTTCCTCGAATAAATAATATAAGATTTTGATTATTACCTCCTTCTTTAACTTTATTAATTTCAAGAAGAATTGTAGAAAATGGAGCAGGAACTGGATGAACTGTTTATCCTCCTTTATCTTCTAATATTGCTCATGGAGGTTCTTCTGTTGATTTAGCTATTTTTTCTTTACATTTAGCTGGAATTTCTTCTATTTTAGGAGCTATTAATTTTATTACTACTATTATTAATATACGAATTAATAATATATCTTTTGATCAAATACCTTTATTTGTTTGATCTGTAGGAATTACTGCTTTATTATTATTACTTTCTTTACCTGTATTAGCTGGAGCTATTACTATATTATTAACTGATCGAAATTTAAATACTTCTTTTTTTGATCCTGCTGGAGGAGGAGATCCAATTTTATATCAACATTTATTT",
+      "Sequence_Length": 609,
+      "GC_Content": 26.11,
+      "Sample_IDs": [
+        "Alvinella_pompejana_COI_hydrothermal_vent_polychaete"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Alvinella pompejana",
+      "Common_Name": "Pompeii Worm",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_002",
+      "Percent_Identity_to_Nearest": 94.5,
+      "Assignment_Confidence": 0.8371,
+      "Kingdom": "Animalia",
+      "Phylum": "Annelida",
+      "Class": "Polychaeta",
+      "Order": "Terebellida",
+      "Family": "Alvinellidae",
+      "Genus": "Alvinella",
+      "Species": "Alvinella pompejana",
+      "Phylo_Placement_Node": "NODE_08890",
+      "Branch_Length_to_placement": 0.029321,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "chemosynthetic_symbiont",
+      "Predicted_Functions": [
+        "extreme_thermophile",
+        "bacterial_symbiosis",
+        "tube_dwelling"
+      ],
+      "Role_Confidence": 0.91,
+      "Novelty_Score": 0.7,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 0.7,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": true,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_090",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTT...",
+      "First_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Last_Detected_Date": "2025-09-26T01:50:55.221462",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "High",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.91,
+        "enhanced_confidence": 0.8371,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.8555966666666667,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9975,
+          "statistical": 0.7
+        },
+        "enhancement_factor": 0.9198901098901098
+      }
+    },
+    {
+      "ASV_ID": "ASV_705F3C0E",
+      "OTU_ID": "OTU_705F3C0E",
+      "Representative_Sequence": "AGAGTTTGATCCTGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATGCAAGTCGAACGGTAACAGGAAGAAGCTTGCTCTTTGCTGACGAGTGGCGGACGGGTGAGTAATGTCTGGGAAACTGCCTGATGGAGGGGGATAACTACTGGAAACGGTAGCTAATACCGCATAACGTCGCAAGACCAAAGAGGGGGACCTTCGGGCCTCTTGCCATCGGATGTGCCCAGATGGGATTAGCTAGTAGGTGGGGTAACGGCTCACCTAGGCGACGATCCCTAGCTGGTCTGAGAGGATGACCAGCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCCATGCCGCGTGTATGAAGAAGGCCTTCGGGTTGTAAAGTACTTTCAGCGGGGAGGAAGGGAGTAAAGTTAATACCTTTGCTCATTGACGTTACCCGCAGAAGAAGCACCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTAATCGGAATTACTGGGCGTAAAGCGCACGCAGGCGGTTTGTTAAGTCAGATGTGAAATCCCCGGGCTCAACCTGGGAACTGCATCTGATACTGGCAAGCTTGAGTCTCGTAGAGGGGGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGGTGGCGAAGGCGGCCCCCTGGACGAAGACTGACGCTCAGGTGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGTCGACTTGGAGGTTGTGCCCTTGAGGCGTGGCTTCCGGAGCTAACGCGTTAAGTCGACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCTGGTCTTGACATCCACGGAAGTTTTCAGAGATGAGAATGTGCCTTCGGGAACCGTGAGACAGGTGCTGCATGGCTGTCGTCAGCTCGTGTTGTGAAATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTTGTTGCCAGCGGTCCGGCCGGGAACTCAAAGGAGACTGCCAGTGATAAACTGGAGGAAGGTGGGGATGACGTCAAGTCATCATGGCCCTTACGACCAGGGCTACACACGTGCTACAATGGCGCATACAAAGAGAAGCGACCTCGCGAGAGCAAGCGGACCTCATAAAGTGCGTCGTAGTCCGGATTGGAGTCTGCAACTCGACTCCATGAAGTCGGAATCGCTAGTAATCGTGGATCAGAATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTCATGACTGGGGTGAAGTCGTAACAAGGTAACCGTAGGGGAACCTGCGGTTGGATCACCTCCTTA",
+      "Sequence_Length": 1534,
+      "GC_Content": 54.69,
+      "Sample_IDs": [
+        "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_04721",
+      "Branch_Length_to_placement": 0.056108,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Bacteria_Proteobacteria_Gammaproteobacteria",
+      "Placement_Taxonomic_Hint": "Bacteria;Proteobacteria;Gammaproteobacteria",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_021",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "AGAGTTTGATCCTGGCTCAGATTGAACGCTGGCGGCAGGCCTAACACATG...",
+      "First_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Last_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7729733333333333,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_91E85DDB",
+      "OTU_ID": "OTU_91E85DDB",
+      "Representative_Sequence": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTTAAGAATGGATCAAATAAATTATATTAATACTGCTCATGCTTTTATTATAATTTTTTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGATTAATTCCTTTAATATTAGGAGCTCCTGATATAGCTTTTCCTCGAATAAATAATATAAGATTTTGATTATTACCTCCTTCTTTAACTTTATTAATTTCAAGAAGAATTGTAGAAAATGGAGCAGGAACTGGATGAACTGTTTATCCTCCTTTATCTTCTAATATTGCTCATGGAGGTTCTTCTGTTGATTTAGCTATTTTTTCTTTACATTTAGCTGGAATTTCTTCTATTTTAGGAGCTATTAATTTTATTACTACTATTATTAATATACGAATTAATAATATATCTTTTGATCAAATACCTTTATTTGTTTGATCTGTAGGAATTACTGCTTTATTATTATTACTTTCTTTACCTGTATTAGCTGGAGCTATTACTATATTATTAACTGATCGAAATTTAAATACTTCTTTTTTTGATCCTGCTGGAGGAGGAGATCCAATTTTATATCAACATTTATTT",
+      "Sequence_Length": 609,
+      "GC_Content": 26.11,
+      "Sample_IDs": [
+        "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Alvinella pompejana",
+      "Common_Name": "Pompeii Worm",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_002",
+      "Percent_Identity_to_Nearest": 94.5,
+      "Assignment_Confidence": 0.8179,
+      "Kingdom": "Animalia",
+      "Phylum": "Annelida",
+      "Class": "Polychaeta",
+      "Order": "Terebellida",
+      "Family": "Alvinellidae",
+      "Genus": "Alvinella",
+      "Species": "Alvinella pompejana",
+      "Phylo_Placement_Node": "NODE_08890",
+      "Branch_Length_to_placement": 0.060728,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "chemosynthetic_symbiont",
+      "Predicted_Functions": [
+        "extreme_thermophile",
+        "bacterial_symbiosis",
+        "tube_dwelling"
+      ],
+      "Role_Confidence": 0.91,
+      "Novelty_Score": 0.7,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 0.7,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": true,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_090",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ATGTTCGGTATTTTGGGTTTTGGAATTTGAGCTCTTATAGGTATTGTTTT...",
+      "First_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Last_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "High",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.91,
+        "enhanced_confidence": 0.8179,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7509066666666667,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9975,
+          "statistical": 0.7
+        },
+        "enhancement_factor": 0.8987912087912087
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.002565,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 2,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Last_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.95145,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    },
+    {
+      "ASV_ID": "ASV_9295AB6B",
+      "OTU_ID": "OTU_9295AB6B",
+      "Representative_Sequence": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCATGCATGTCTAAGTACGCACGGCCGGTACAGTGAAACTGCGAATGGCTCATTAAATCAGTTATGGTTCCTTTGGTCGCTCGCTCCTCTCCTACTTGGATAACTGTGGTAATTCTAGAGCTAATACATGCCGACGGGCGCTGACCCCCTTCGCGGGGGGGATGCGTGCATTTATCAGATCAAAACCAACCCGGTCAGCCCCTCTCCGGCCCCGGCCGGGGCCGGGCCGCGGCGGCTTTGGTGACTCTAGATAACCTCGGGCCGATCGCACGCCCCCCGTGGCGGCGACGACCCATTCGAACGTCTGCCCTATCAACTTTCGATGGTAGGATAGTGGCCTACCGTGACAAAGACACCAGCGAGTTGAGAGCCTGAAAGCGGCTACCACATCCAAGGAAGGCAGCAGGCGCGCAAATTACCCACTCCCGACCCGGGGAGGTAGTGACGAAAAATAACAATACAGGACTCTTTCGAGGCCCTGTAATTGGAATGAGTCCACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGCTGCAGTTAAAAAGCTCGTAGTTGGATCTTGGGAGCGGGCGGGCGGTCCGCCGCGAGGCGAGCCACCGCCCGTCCCCGCCCCTTGCCTCTCGGCGCCCCCTCGATGCTCTTAGCTGAGTGTCCCGCGGGGCCCGAAGCGTTTACTTTGAAAAAATTAGAGTGTTCAAAGCAGGCCCGAGCCGCCTGGATACCGCAGCTAGGAATAATGGAATAGGACCGCGGTTCTATTTTGTTGGTTTTCGGAACTGAGGCCATGATTAAGAGGGACGGCCGGGGGCATTCGTATTGCGCCGCTAGAGGTGAAATTCTTGGACCGGCGCAAGACGGACCAGAGCGAAAGCATTTGCCAAGAATGTTTTCATTAATCAAGAACGAAAGTCGGAGGTTCGAAGACGATCAGATACCGTCGTAGTTCCGACCATAAACGATGCCGACCGGCGATGCGGCGGCGTTATTCCCATGACCCGCCGGGCAGCTTCCGGGAAACCAAAGTCTTTGGGTTCCGGGGGGAGTATGGTCGCAAGGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCCGGCCCGGACACGGACAGGATTGACAGATTGATAGCTCTTTCTCGATTCCGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGAGTGATTTGTCTGGTTAATTCCGATAACGAACGAGACTCTGGCATGCTAACTAGTTACGCGACCCCCGAGCGGTCGGCGTCCCCCAACTTCTTAGAGGGACAAGTGGCGTTCAGCCACCCGAGATTGAGCAATAACAGGTCTGTGATGCCCTTAGATGTCCGGGGCTGCACGCGCGCTACACTGACTGGCTCAGCGTGTGCCTACCCTACGCCGGCAGGCGCGGGTAACCCGTTGAACCCCATTCGTGATGGGGATCGGGGATTGCAATTATTCCCCATGAACGAGGAATTCCCAGTAAGTGCGGGTCATAAGCTTGCGTTGATTAAGTCCCTGCCCTTTGTACACACCGCCCGTCGCTACTACCGATTGGATGGTTTGGTGAGGCCCTCGGATCGGCCCCGCCGGGGTCGGCCCACGGCCCTGGCGGAGCGCTGAGAAGACGGTCGAACTTGACCTCAAATCAGGTAGGACTACCCGCTGAACTTAA",
+      "Sequence_Length": 1816,
+      "GC_Content": 56.17,
+      "Sample_IDs": [
+        "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.076923,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 76923.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Bathymodiolus thermophilus",
+      "Common_Name": "Hydrothermal Vent Mussel",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "deep_sea_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_deep_sea_001",
+      "Percent_Identity_to_Nearest": 96.8,
+      "Assignment_Confidence": 1.0,
+      "Kingdom": "Animalia",
+      "Phylum": "Mollusca",
+      "Class": "Bivalvia",
+      "Order": "Mytilida",
+      "Family": "Mytilidae",
+      "Genus": "Bathymodiolus",
+      "Species": "Bathymodiolus thermophilus",
+      "Phylo_Placement_Node": "NODE_09351",
+      "Branch_Length_to_placement": 0.090417,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "filter_feeder",
+      "Predicted_Functions": [
+        "chemosynthetic_symbiosis",
+        "filter_feeding",
+        "hydrothermal_adaptation"
+      ],
+      "Role_Confidence": 0.94,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "18S_rRNA",
+      "Expected_Amplicon_Region": "V4",
+      "Primer_Match": {
+        "forward": true,
+        "reverse": true
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_051",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "ACCTGGTTGATCCTGCCAGTAGTCATATGCTTGTCTCAAAGATTAAGCCA...",
+      "First_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Last_Detected_Date": "2025-09-26T01:50:55.222445",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-26T01:50:55.216326",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.93,
+        "enhanced_confidence": 1.0,
+        "validation_scores": {
+          "sequence_similarity": 0.9,
+          "phylogenetic_consistency": 0.7266666666666667,
+          "marker_validation": 1.0,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.075268817204301
+      }
+    }
+  ],
+  "ai_classification": {
+    "predictions": [
+      {
+        "sequence_id": "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent",
+        "ai_prediction": {
+          "sequence_id": "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent",
+          "cluster_id": 1,
+          "novelty_score": 1.2,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.95,
+          "habitat_prediction": "deep_sea",
+          "deep_sea_candidate": true
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA",
+        "ai_prediction": {
+          "sequence_id": "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA",
+          "cluster_id": 1,
+          "novelty_score": 1.2,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.95,
+          "habitat_prediction": "deep_sea",
+          "deep_sea_candidate": true
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI",
+        "ai_prediction": {
+          "sequence_id": "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.25,
+          "habitat_prediction": "terrestrial",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA",
+        "ai_prediction": {
+          "sequence_id": "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA",
+          "cluster_id": 1,
+          "novelty_score": 1.2,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.95,
+          "habitat_prediction": "deep_sea",
+          "deep_sea_candidate": true
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI",
+        "ai_prediction": {
+          "sequence_id": "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.25,
+          "habitat_prediction": "terrestrial",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate",
+        "ai_prediction": {
+          "sequence_id": "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate",
+          "cluster_id": 1,
+          "novelty_score": 1.2,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.95,
+          "habitat_prediction": "deep_sea",
+          "deep_sea_candidate": true
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod",
+        "ai_prediction": {
+          "sequence_id": "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.25,
+          "habitat_prediction": "terrestrial",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA",
+        "ai_prediction": {
+          "sequence_id": "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA",
+          "cluster_id": 1,
+          "novelty_score": 1.2,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.95,
+          "habitat_prediction": "deep_sea",
+          "deep_sea_candidate": true
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Alvinella_pompejana_COI_hydrothermal_vent_polychaete",
+        "ai_prediction": {
+          "sequence_id": "Alvinella_pompejana_COI_hydrothermal_vent_polychaete",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Alvinella_pompejana_COI_hydrothermal_vent_polychaete",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.25,
+          "habitat_prediction": "terrestrial",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate",
+        "ai_prediction": {
+          "sequence_id": "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate",
+          "cluster_id": 2,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate",
+          "cluster_id": 2,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.7,
+          "habitat_prediction": "marine_surface",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water",
+        "ai_prediction": {
+          "sequence_id": "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.25,
+          "habitat_prediction": "terrestrial",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian",
+        "ai_prediction": {
+          "sequence_id": "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian",
+          "cluster_id": 1,
+          "novelty_score": 1.2,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.95,
+          "habitat_prediction": "deep_sea",
+          "deep_sea_candidate": true
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA",
+        "ai_prediction": {
+          "sequence_id": "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA",
+          "cluster_id": 1,
+          "novelty_score": 1.2,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.95,
+          "habitat_prediction": "deep_sea",
+          "deep_sea_candidate": true
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      }
+    ],
+    "ai_performance": {
+      "model_trained": true,
+      "training_accuracy": 0.8999999761581421,
+      "validation_accuracy": 1.0,
+      "n_classes": 3
+    },
+    "clustering_quality": 0.9000000000000002,
+    "novel_taxa_count": 0,
+    "known_species_count": 13,
+    "confidence_metrics": {
+      "average_confidence": 0.9000000000000002,
+      "high_confidence_count": 13,
+      "total_predictions": 13
+    }
+  },
+  "biodiversity_metrics": {
+    "species_richness": 9,
+    "shannon_diversity_index": 2.0318,
+    "pielou_evenness": 0.9247,
+    "simpson_index": 0.8402,
+    "chao1_estimator": 33.5,
+    "species_abundance": {
+      "Bathymodiolus thermophilus": 2,
+      "Lophelia pertusa": 1,
+      "Centrophorus squamosus": 1,
+      "Vazella pourtalesii": 1,
+      "Hippocampus capensis": 1,
+      "Novel Taxa Discovery Alert!": 4,
+      "Paragorgia arborea": 1,
+      "Latimeria chalumnae": 1,
+      "Desmophyllum dianthus": 1
+    },
+    "dominant_species": "Novel Taxa Discovery Alert!",
+    "rarest_species": "Lophelia pertusa"
+  },
+  "quality_analysis": {
+    "gc_content": 50.74,
+    "nucleotide_composition": {
+      "A": 4108,
+      "C": 4181,
+      "T": 4409,
+      "G": 4593
+    },
+    "sequence_complexity": 0.0002,
+    "average_quality_score": 36.4,
+    "quality_distribution": {
+      "high_quality": 7,
+      "medium_quality": 6,
+      "low_quality": 0
+    }
+  },
+  "conservation_assessment": {
+    "total_species_assessed": 13,
+    "threatened_species_count": 0,
+    "priority_species": [],
+    "threatened_species_details": [],
+    "conservation_alerts": [],
+    "conservation_priority": "Low",
+    "recommendations": []
+  },
+  "phylogenetic_analysis": {
+    "newick_tree": "((Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent,Alvinella_pompejana_COI_hydrothermal_vent_polychaete),(Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA,Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA),Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI,Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA,Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI,(Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate,Novel_deep_sea_species_candidate_002_COI_unknown_arthropod,Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate),Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA,Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water);",
+    "families_identified": 8,
+    "family_distribution": {
+      "Mytilidae": [
+        "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent",
+        "Alvinella_pompejana_COI_hydrothermal_vent_polychaete"
+      ],
+      "Caryophylliidae": [
+        "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA",
+        "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA"
+      ],
+      "Centrophoridae": [
+        "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI"
+      ],
+      "Rossellidae": [
+        "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA"
+      ],
+      "Syngnathidae": [
+        "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI"
+      ],
+      "Unknown": [
+        "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate",
+        "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod",
+        "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate",
+        "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian"
+      ],
+      "Paragorgiidae": [
+        "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA"
+      ],
+      "Latimeriidae": [
+        "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water"
+      ]
+    },
+    "tree_depth": 3,
+    "total_nodes": 13
+  },
+  "deepsea_analysis": {
+    "deep_sea_classifications": [
+      {
+        "sequence_id": "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "abyssal_plain",
+        "depth_zone": "abyssopelagic",
+        "predicted_taxa": "arthropoda",
+        "marine_confidence": 0.3,
+        "depth_confidence": 0.95,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "abyssal_plain",
+        "depth_zone": "abyssopelagic",
+        "predicted_taxa": "arthropoda",
+        "marine_confidence": 0.3,
+        "depth_confidence": 0.95,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI",
+        "is_marine": false,
+        "is_deep_sea": false,
+        "is_eukaryotic": false,
+        "habitat": "unknown_marine",
+        "depth_zone": "unknown_depth",
+        "predicted_taxa": "eukaryotic",
+        "marine_confidence": 0.1,
+        "depth_confidence": 0.1,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0
+      },
+      {
+        "sequence_id": "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "abyssal_plain",
+        "depth_zone": "abyssopelagic",
+        "predicted_taxa": "arthropoda",
+        "marine_confidence": 0.3,
+        "depth_confidence": 0.95,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI",
+        "is_marine": false,
+        "is_deep_sea": false,
+        "is_eukaryotic": false,
+        "habitat": "unknown_marine",
+        "depth_zone": "unknown_depth",
+        "predicted_taxa": "eukaryotic",
+        "marine_confidence": 0.1,
+        "depth_confidence": 0.1,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0
+      },
+      {
+        "sequence_id": "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "abyssal_plain",
+        "depth_zone": "abyssopelagic",
+        "predicted_taxa": "arthropoda",
+        "marine_confidence": 0.3,
+        "depth_confidence": 0.95,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod",
+        "is_marine": false,
+        "is_deep_sea": false,
+        "is_eukaryotic": false,
+        "habitat": "unknown_marine",
+        "depth_zone": "unknown_depth",
+        "predicted_taxa": "eukaryotic",
+        "marine_confidence": 0.1,
+        "depth_confidence": 0.1,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0
+      },
+      {
+        "sequence_id": "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "abyssal_plain",
+        "depth_zone": "abyssopelagic",
+        "predicted_taxa": "arthropoda",
+        "marine_confidence": 0.3,
+        "depth_confidence": 0.95,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "Alvinella_pompejana_COI_hydrothermal_vent_polychaete",
+        "is_marine": false,
+        "is_deep_sea": false,
+        "is_eukaryotic": false,
+        "habitat": "unknown_marine",
+        "depth_zone": "unknown_depth",
+        "predicted_taxa": "eukaryotic",
+        "marine_confidence": 0.1,
+        "depth_confidence": 0.1,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0
+      },
+      {
+        "sequence_id": "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": true,
+        "habitat": "unknown_marine",
+        "depth_zone": "bathypelagic",
+        "predicted_taxa": "mollusca",
+        "marine_confidence": 0.1,
+        "depth_confidence": 0.95,
+        "eukaryotic_score": 0.30000000000000004,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.7
+      },
+      {
+        "sequence_id": "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water",
+        "is_marine": false,
+        "is_deep_sea": false,
+        "is_eukaryotic": false,
+        "habitat": "unknown_marine",
+        "depth_zone": "unknown_depth",
+        "predicted_taxa": "eukaryotic",
+        "marine_confidence": 0.1,
+        "depth_confidence": 0.1,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0
+      },
+      {
+        "sequence_id": "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "abyssal_plain",
+        "depth_zone": "abyssopelagic",
+        "predicted_taxa": "arthropoda",
+        "marine_confidence": 0.3,
+        "depth_confidence": 0.95,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "abyssal_plain",
+        "depth_zone": "abyssopelagic",
+        "predicted_taxa": "arthropoda",
+        "marine_confidence": 0.3,
+        "depth_confidence": 0.95,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      }
+    ],
+    "marine_context_analysis": {
+      "habitat_predictions": [
+        {
+          "sequence_id": "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent",
+          "predicted_habitat": "abyssal_plain",
+          "confidence": 0.3,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA",
+          "predicted_habitat": "abyssal_plain",
+          "confidence": 0.3,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI",
+          "predicted_habitat": "unknown_marine",
+          "confidence": 0.1,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA",
+          "predicted_habitat": "abyssal_plain",
+          "confidence": 0.3,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI",
+          "predicted_habitat": "unknown_marine",
+          "confidence": 0.1,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate",
+          "predicted_habitat": "abyssal_plain",
+          "confidence": 0.3,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod",
+          "predicted_habitat": "unknown_marine",
+          "confidence": 0.1,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA",
+          "predicted_habitat": "abyssal_plain",
+          "confidence": 0.3,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Alvinella_pompejana_COI_hydrothermal_vent_polychaete",
+          "predicted_habitat": "unknown_marine",
+          "confidence": 0.1,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate",
+          "predicted_habitat": "unknown_marine",
+          "confidence": 0.1,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water",
+          "predicted_habitat": "unknown_marine",
+          "confidence": 0.1,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian",
+          "predicted_habitat": "abyssal_plain",
+          "confidence": 0.3,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA",
+          "predicted_habitat": "abyssal_plain",
+          "confidence": 0.3,
+          "supporting_patterns": []
+        }
+      ],
+      "depth_estimates": [
+        {
+          "sequence_id": "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent",
+          "depth_zone": "abyssopelagic",
+          "depth_confidence": 0.95,
+          "depth_indicators": [
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern"
+          ]
+        },
+        {
+          "sequence_id": "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA",
+          "depth_zone": "abyssopelagic",
+          "depth_confidence": 0.95,
+          "depth_indicators": [
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern"
+          ]
+        },
+        {
+          "sequence_id": "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI",
+          "depth_zone": "unknown_depth",
+          "depth_confidence": 0.1,
+          "depth_indicators": []
+        },
+        {
+          "sequence_id": "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA",
+          "depth_zone": "abyssopelagic",
+          "depth_confidence": 0.95,
+          "depth_indicators": [
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern"
+          ]
+        },
+        {
+          "sequence_id": "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI",
+          "depth_zone": "unknown_depth",
+          "depth_confidence": 0.1,
+          "depth_indicators": []
+        },
+        {
+          "sequence_id": "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate",
+          "depth_zone": "abyssopelagic",
+          "depth_confidence": 0.95,
+          "depth_indicators": [
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern"
+          ]
+        },
+        {
+          "sequence_id": "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod",
+          "depth_zone": "unknown_depth",
+          "depth_confidence": 0.1,
+          "depth_indicators": []
+        },
+        {
+          "sequence_id": "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA",
+          "depth_zone": "abyssopelagic",
+          "depth_confidence": 0.95,
+          "depth_indicators": [
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern"
+          ]
+        },
+        {
+          "sequence_id": "Alvinella_pompejana_COI_hydrothermal_vent_polychaete",
+          "depth_zone": "unknown_depth",
+          "depth_confidence": 0.1,
+          "depth_indicators": []
+        },
+        {
+          "sequence_id": "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate",
+          "depth_zone": "bathypelagic",
+          "depth_confidence": 0.95,
+          "depth_indicators": [
+            "complexity_0.973",
+            "high_pressure_pattern",
+            "complexity_0.973",
+            "high_pressure_pattern",
+            "gc_content_0.547",
+            "complexity_0.973",
+            "high_pressure_pattern",
+            "gc_content_0.547",
+            "complexity_0.973",
+            "high_pressure_pattern",
+            "complexity_0.973",
+            "high_pressure_pattern"
+          ]
+        },
+        {
+          "sequence_id": "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water",
+          "depth_zone": "unknown_depth",
+          "depth_confidence": 0.1,
+          "depth_indicators": []
+        },
+        {
+          "sequence_id": "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian",
+          "depth_zone": "abyssopelagic",
+          "depth_confidence": 0.95,
+          "depth_indicators": [
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern"
+          ]
+        },
+        {
+          "sequence_id": "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA",
+          "depth_zone": "abyssopelagic",
+          "depth_confidence": 0.95,
+          "depth_indicators": [
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern",
+            "gc_content_0.562",
+            "complexity_1.000",
+            "high_pressure_pattern"
+          ]
+        }
+      ],
+      "marine_taxa_detected": [
+        {
+          "sequence_id": "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent",
+          "predicted_taxa": "arthropoda",
+          "taxa_confidence": 0.3333333333333333,
+          "taxonomic_markers": [
+            "GGAATTCC"
+          ]
+        },
+        {
+          "sequence_id": "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA",
+          "predicted_taxa": "arthropoda",
+          "taxa_confidence": 0.3333333333333333,
+          "taxonomic_markers": [
+            "GGAATTCC"
+          ]
+        },
+        {
+          "sequence_id": "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI",
+          "predicted_taxa": "eukaryotic",
+          "taxa_confidence": 0.3,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA",
+          "predicted_taxa": "arthropoda",
+          "taxa_confidence": 0.3333333333333333,
+          "taxonomic_markers": [
+            "GGAATTCC"
+          ]
+        },
+        {
+          "sequence_id": "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI",
+          "predicted_taxa": "eukaryotic",
+          "taxa_confidence": 0.3,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate",
+          "predicted_taxa": "arthropoda",
+          "taxa_confidence": 0.3333333333333333,
+          "taxonomic_markers": [
+            "GGAATTCC"
+          ]
+        },
+        {
+          "sequence_id": "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod",
+          "predicted_taxa": "eukaryotic",
+          "taxa_confidence": 0.3,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA",
+          "predicted_taxa": "arthropoda",
+          "taxa_confidence": 0.3333333333333333,
+          "taxonomic_markers": [
+            "GGAATTCC"
+          ]
+        },
+        {
+          "sequence_id": "Alvinella_pompejana_COI_hydrothermal_vent_polychaete",
+          "predicted_taxa": "eukaryotic",
+          "taxa_confidence": 0.3,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate",
+          "predicted_taxa": "mollusca",
+          "taxa_confidence": 0.3333333333333333,
+          "taxonomic_markers": [
+            "GGTAACCG"
+          ]
+        },
+        {
+          "sequence_id": "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water",
+          "predicted_taxa": "eukaryotic",
+          "taxa_confidence": 0.3,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian",
+          "predicted_taxa": "arthropoda",
+          "taxa_confidence": 0.3333333333333333,
+          "taxonomic_markers": [
+            "GGAATTCC"
+          ]
+        },
+        {
+          "sequence_id": "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA",
+          "predicted_taxa": "arthropoda",
+          "taxa_confidence": 0.3333333333333333,
+          "taxonomic_markers": [
+            "GGAATTCC"
+          ]
+        }
+      ],
+      "environmental_indicators": {
+        "habitat_distribution": {
+          "abyssal_plain": 7,
+          "unknown_marine": 6
+        },
+        "depth_distribution": {
+          "abyssopelagic": 7,
+          "unknown_depth": 5,
+          "bathypelagic": 1
+        },
+        "average_habitat_confidence": 0.2076923076923077,
+        "average_depth_confidence": 0.6230769230769231,
+        "dominant_habitat": "abyssal_plain",
+        "dominant_depth": "abyssopelagic"
+      }
+    },
+    "eukaryotic_sequences": [
+      {
+        "sequence_id": "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate",
+        "eukaryotic_score": 0.30000000000000004,
+        "detected_markers": [],
+        "marker_details": {},
+        "sequence_length": 1534,
+        "gc_content": 0.5469361147327249
+      }
+    ],
+    "optimization_summary": {
+      "total_sequences": 13,
+      "marine_sequences": 0,
+      "deep_sea_sequences": 8,
+      "eukaryotic_sequences": 1,
+      "high_relevance_sequences": 0
+    }
+  },
+  "independent_classification": {
+    "classifications": [
+      {
+        "sequence_id": "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent",
+        "cluster_id": 5,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.95,
+        "novelty_score": 0.7,
+        "is_novel": false,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          1816,
+          0.5616740088105727,
+          0.43832599118942733,
+          1.0,
+          1.2654185022026432,
+          0.9765957467232974
+        ]
+      },
+      {
+        "sequence_id": "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA",
+        "cluster_id": 5,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.95,
+        "novelty_score": 0.7,
+        "is_novel": false,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          1816,
+          0.5616740088105727,
+          0.43832599118942733,
+          1.0,
+          1.2654185022026432,
+          0.9765957467232974
+        ]
+      },
+      {
+        "sequence_id": "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI",
+        "cluster_id": 6,
+        "predicted_taxonomic_level": "viral",
+        "confidence": 0.95,
+        "novelty_score": 0.7,
+        "is_novel": false,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          609,
+          0.26108374384236455,
+          0.7389162561576355,
+          0.55859375,
+          1.7832512315270936,
+          0.8847598997031256
+        ]
+      },
+      {
+        "sequence_id": "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA",
+        "cluster_id": 7,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.95,
+        "novelty_score": 0.7,
+        "is_novel": false,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          1816,
+          0.5616740088105727,
+          0.43832599118942733,
+          1.0,
+          1.2654185022026432,
+          0.9765957467232974
+        ]
+      },
+      {
+        "sequence_id": "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI",
+        "cluster_id": 6,
+        "predicted_taxonomic_level": "viral",
+        "confidence": 0.95,
+        "novelty_score": 0.7,
+        "is_novel": false,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          609,
+          0.26108374384236455,
+          0.7389162561576355,
+          0.55859375,
+          1.7832512315270936,
+          0.8847598997031256
+        ]
+      },
+      {
+        "sequence_id": "Unknown_deep_sea_organism_sample_001_18S_rRNA_novel_candidate",
+        "cluster_id": 7,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.95,
+        "novelty_score": 0.7,
+        "is_novel": false,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          1816,
+          0.5616740088105727,
+          0.43832599118942733,
+          1.0,
+          1.2654185022026432,
+          0.9765957467232974
+        ]
+      },
+      {
+        "sequence_id": "Novel_deep_sea_species_candidate_002_COI_unknown_arthropod",
+        "cluster_id": 8,
+        "predicted_taxonomic_level": "viral",
+        "confidence": 0.95,
+        "novelty_score": 0.7,
+        "is_novel": false,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          609,
+          0.26108374384236455,
+          0.7389162561576355,
+          0.55859375,
+          1.7832512315270936,
+          0.8847598997031256
+        ]
+      },
+      {
+        "sequence_id": "Endangered_Paragorgia_arborea_deep_sea_coral_18S_rRNA",
+        "cluster_id": 0,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          1816,
+          0.5616740088105727,
+          0.43832599118942733,
+          1.0,
+          1.2654185022026432,
+          0.9765957467232974
+        ]
+      },
+      {
+        "sequence_id": "Alvinella_pompejana_COI_hydrothermal_vent_polychaete",
+        "cluster_id": 8,
+        "predicted_taxonomic_level": "viral",
+        "confidence": 0.95,
+        "novelty_score": 0.7,
+        "is_novel": false,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          609,
+          0.26108374384236455,
+          0.7389162561576355,
+          0.55859375,
+          1.7832512315270936,
+          0.8847598997031256
+        ]
+      },
+      {
+        "sequence_id": "Unknown_deep_sea_organism_sample_003_16S_rRNA_bacterial_candidate",
+        "cluster_id": 1,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          1534,
+          0.5469361147327249,
+          0.4530638852672751,
+          0.97265625,
+          1.196870925684485,
+          0.9756395207830106
+        ]
+      },
+      {
+        "sequence_id": "Critically_Endangered_Latimeria_chalumnae_coelacanth_COI_deep_water",
+        "cluster_id": 2,
+        "predicted_taxonomic_level": "viral",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          609,
+          0.26108374384236455,
+          0.7389162561576355,
+          0.55859375,
+          1.7832512315270936,
+          0.8847598997031256
+        ]
+      },
+      {
+        "sequence_id": "Novel_deep_sea_species_candidate_004_18S_rRNA_unknown_cnidarian",
+        "cluster_id": 3,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          1816,
+          0.5616740088105727,
+          0.43832599118942733,
+          1.0,
+          1.2654185022026432,
+          0.9765957467232974
+        ]
+      },
+      {
+        "sequence_id": "Endangered_Desmophyllum_dianthus_deep_sea_coral_18S_rRNA",
+        "cluster_id": 4,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          1816,
+          0.5616740088105727,
+          0.43832599118942733,
+          1.0,
+          1.2654185022026432,
+          0.9765957467232974
+        ]
+      }
+    ],
+    "classification_tree": {
+      "type": "hierarchical_classification",
+      "levels": 12,
+      "total_sequences": 13,
+      "merge_history": [
+        {
+          "clusters": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "distance": 0.0,
+          "size": 2
+        },
+        {
+          "clusters": [
+            [
+              2
+            ],
+            [
+              4
+            ]
+          ],
+          "distance": 0.0,
+          "size": 2
+        },
+        {
+          "clusters": [
+            [
+              3
+            ],
+            [
+              5
+            ]
+          ],
+          "distance": 0.0,
+          "size": 2
+        },
+        {
+          "clusters": [
+            [
+              6
+            ],
+            [
+              8
+            ]
+          ],
+          "distance": 0.0,
+          "size": 2
+        },
+        {
+          "clusters": [
+            [
+              7
+            ],
+            [
+              11
+            ]
+          ],
+          "distance": 0.0,
+          "size": 2
+        },
+        {
+          "clusters": [
+            [
+              10
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "distance": 0.0,
+          "size": 3
+        },
+        {
+          "clusters": [
+            [
+              12
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "distance": 0.0,
+          "size": 3
+        },
+        {
+          "clusters": [
+            [
+              3,
+              5
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "distance": 0.0,
+          "size": 4
+        },
+        {
+          "clusters": [
+            [
+              6,
+              8
+            ],
+            [
+              10,
+              2,
+              4
+            ]
+          ],
+          "distance": 0.0,
+          "size": 5
+        },
+        {
+          "clusters": [
+            [
+              12,
+              0,
+              1
+            ],
+            [
+              3,
+              5,
+              7,
+              11
+            ]
+          ],
+          "distance": 0.0,
+          "size": 7
+        },
+        {
+          "clusters": [
+            [
+              9
+            ],
+            [
+              12,
+              0,
+              1,
+              3,
+              5,
+              7,
+              11
+            ]
+          ],
+          "distance": 282.0000157842548,
+          "size": 8
+        },
+        {
+          "clusters": [
+            [
+              6,
+              8,
+              10,
+              2,
+              4
+            ],
+            [
+              9,
+              12,
+              0,
+              1,
+              3,
+              5,
+              7,
+              11
+            ]
+          ],
+          "distance": 1171.75030868167,
+          "size": 13
+        }
+      ]
+    },
+    "cluster_summary": {
+      "total_clusters": 9,
+      "largest_cluster_size": 2,
+      "smallest_cluster_size": 1,
+      "singleton_clusters": 5,
+      "cluster_distribution": {
+        "5": 2,
+        "6": 2,
+        "7": 2,
+        "8": 2,
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "taxonomic_distribution": {
+        "eukaryotic": 8,
+        "viral": 5
+      }
+    },
+    "novel_taxa_count": 5
+  },
+  "edna_processing": {
+    "otu_count": 3,
+    "cluster_labels": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      2,
+      1,
+      0,
+      0
+    ],
+    "marker_genes": {
+      "18S_count": 7,
+      "COI_count": 5
+    }
+  },
+  "microbiome_analysis": {
+    "phylum_distribution": {
+      "Bacteroidetes": 22.7,
+      "Firmicutes": 32.8,
+      "Proteobacteria": 16.0,
+      "Actinobacteria": 10.9,
+      "Verrucomicrobia": 10.1,
+      "Others": 7.6
+    },
+    "dominant_phyla": [
+      [
+        "Firmicutes",
+        32.8
+      ],
+      [
+        "Bacteroidetes",
+        22.7
+      ],
+      [
+        "Proteobacteria",
+        16.0
+      ]
+    ],
+    "diversity_metrics": {
+      "shannon_diversity": 2.878,
+      "species_richness": 183,
+      "chao1_estimator": 172
+    },
+    "otu_analysis": {
+      "total_otus": 95,
+      "singleton_otus": 17,
+      "dominant_otus": [
+        "OTU_001",
+        "OTU_002",
+        "OTU_003",
+        "OTU_004",
+        "OTU_005"
+      ]
+    }
+  },
+  "quantum_analysis": {
+    "quantum_benchmark": {
+      "classical_time_ms": 391,
+      "quantum_time_ms": 132,
+      "speed_ratio": 1.8,
+      "quantum_advantage": true
+    },
+    "alignment_analysis": {
+      "average_alignment_score": 0.702,
+      "quantum_optimization": "Applied",
+      "backend": "AerSimulator (Local)"
+    },
+    "clustering_results": {
+      "cluster_0": 11,
+      "cluster_1": 6,
+      "cluster_2": 7
+    }
+  },
+  "protein_analysis": {
+    "protein_predictions": [
+      {
+        "sequence_id": "Bathymodiolus_thermophilus_18S_rRNA_hydrothermal_vent",
+        "model_used": "ColabFold",
+        "confidence_score": 0.867,
+        "predicted_domains": [
+          "alpha_helix",
+          "beta_sheet"
+        ],
+        "structure_quality": "Low"
+      },
+      {
+        "sequence_id": "Critically_Endangered_Lophelia_pertusa_deep_sea_coral_18S_rRNA",
+        "model_used": "ColabFold",
+        "confidence_score": 0.745,
+        "predicted_domains": [
+          "zinc_finger_domain"
+        ],
+        "structure_quality": "Medium"
+      },
+      {
+        "sequence_id": "Critically_Endangered_Centrophorus_squamosus_deep_sea_shark_COI",
+        "model_used": "ColabFold",
+        "confidence_score": 0.804,
+        "predicted_domains": [
+          "transmembrane_domain"
+        ],
+        "structure_quality": "Low"
+      },
+      {
+        "sequence_id": "Endangered_Vazella_pourtalesii_glass_sponge_18S_rRNA",
+        "model_used": "ColabFold",
+        "confidence_score": 0.732,
+        "predicted_domains": [
+          "alpha_helix",
+          "beta_sheet"
+        ],
+        "structure_quality": "High"
+      },
+      {
+        "sequence_id": "Critically_Endangered_Hippocampus_capensis_deep_sea_seahorse_COI",
+        "model_used": "ColabFold",
+        "confidence_score": 0.817,
+        "predicted_domains": [
+          "nuclear_localization_signal"
+        ],
+        "structure_quality": "High"
+      }
+    ],
+    "total_structures_predicted": 5,
+    "average_confidence": 0.793
+  },
+  "processing_time": "7.95 seconds",
+  "comprehensive_report": {
+    "executive_summary": {
+      "total_sequences": 13,
+      "species_identified": 9,
+      "novel_taxa_detected": 0,
+      "known_species_count": 13,
+      "threatened_species_count": 0,
+      "conservation_priority": "Low",
+      "data_quality": "High",
+      "average_confidence": 0.93
+    },
+    "key_findings": [
+      "Analyzed 13 DNA sequences with enhanced AI classification",
+      "Identified 13 known species from reference databases",
+      "Detected 0 potentially novel taxa requiring further investigation",
+      "Found 0 threatened species requiring conservation attention",
+      "Achieved 93.0% average confidence in classifications",
+      "Biodiversity index: 2.0318",
+      "Processing time: 7.95 seconds"
+    ],
+    "recommendations": [
+      "Continue regular biodiversity monitoring",
+      "Maintain current conservation efforts",
+      "Expand reference database with newly identified sequences",
+      "Consider additional sampling for comprehensive assessment"
+    ],
+    "data_quality_assessment": {
+      "overall_quality": "High",
+      "sequence_completeness": "Complete",
+      "classification_confidence": "High",
+      "novel_taxa_detection": "Active",
+      "conservation_screening": "Complete"
+    }
+  }
+}
