@@ -3,93 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioMapper - Biodiversity Analysis Platform</title>
+    <title>BioMapper AI - Deep-Sea eDNA Analysis</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>🧬 BioMapper</h1>
-            <p>Comprehensive Biodiversity Analysis Platform</p>
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-dna"></i>
+                    <h1>BioMapper AI</h1>
+                </div>
+                <p class="subtitle">AI-Enhanced Deep-Sea eDNA Analysis Platform</p>
+                <div class="version-badge">v2.0.0 - AI Enhanced</div>
+            </div>
         </header>
 
-        <div class="upload-section">
-            <div class="upload-box" id="uploadBox">
-                <input type="file" id="fileInput" accept=".fasta,.fa,.fas" hidden>
-                <div class="upload-content">
-                    <div class="upload-icon">📁</div>
-                    <h3>Upload FASTA File</h3>
-                    <p>Drag & drop or click to select your FASTA file</p>
-                    <button class="btn-primary" onclick="document.getElementById('fileInput').click()">Choose File</button>
+        <nav class="features-nav">
+            <div class="feature-item">
+                <i class="fas fa-robot"></i>
+                <span>AI Classification</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-water"></i>
+                <span>Deep-Sea Analysis</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-microscope"></i>
+                <span>Novel Taxa Detection</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-database"></i>
+                <span>Database Independent</span>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="upload-section">
+                <div class="upload-header">
+                    <h2><i class="fas fa-upload"></i> Upload Your Sequences</h2>
+                    <p>Support for FASTA and FASTQ files with AI-powered analysis</p>
+                </div>
+                
+                <div class="file-upload-area" id="uploadBox">
+                    <input type="file" id="fileInput" accept=".fasta,.fa,.fas,.fastq,.fq,.gz" hidden>
+                    <div class="upload-content">
+                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                        <h3>Drag & Drop or Click to Upload</h3>
+                        <p>Supports: FASTA (.fasta, .fa, .fas) and FASTQ (.fastq, .fq, .gz)</p>
+                        <button class="btn-primary" onclick="document.getElementById('fileInput').click()">
+                            <i class="fas fa-file-upload"></i> Choose File
+                        </button>
+                        <div class="file-info" id="fileInfo"></div>
+                    </div>
+                </div>
+                
+                <div class="analysis-options">
+                    <h3><i class="fas fa-cogs"></i> AI Analysis Options</h3>
+                    <div class="options-grid">
+                        <label class="option-item">
+                            <input type="checkbox" id="aiClassification" checked>
+                            <span class="checkmark"></span>
+                            <div class="option-content">
+                                <strong><i class="fas fa-robot"></i> AI Classification</strong>
+                                <small>Machine learning-based species identification</small>
+                            </div>
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" id="deepSeaAnalysis" checked>
+                            <span class="checkmark"></span>
+                            <div class="option-content">
+                                <strong><i class="fas fa-water"></i> Deep-Sea Analysis</strong>
+                                <small>Marine habitat and depth zone prediction</small>
+                            </div>
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" id="novelTaxaDetection" checked>
+                            <span class="checkmark"></span>
+                            <div class="option-content">
+                                <strong><i class="fas fa-microscope"></i> Novel Taxa Detection</strong>
+                                <small>AI-powered discovery of new species</small>
+                            </div>
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" id="ednaProcessing" checked>
+                            <span class="checkmark"></span>
+                            <div class="option-content">
+                                <strong><i class="fas fa-dna"></i> eDNA Processing</strong>
+                                <small>Quality filtering and OTU clustering</small>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="analyze-btn" id="analyzeBtn" onclick="startAnalysis()">
+                    <i class="fas fa-play"></i>
+                    Start AI Analysis
+                </button>
+            </div>
+
+            <div class="analysis-section" id="analysisSection" style="display: none;">
+                <div class="loading-content">
+                    <div class="dna-spinner">
+                        <div class="dna-strand"></div>
+                        <div class="dna-strand"></div>
+                    </div>
+                    <h3><i class="fas fa-brain"></i> AI Analysis in Progress</h3>
+                    <p id="statusText">Initializing AI modules...</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress"></div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="analysis-section" id="analysisSection" style="display: none;">
-            <div class="progress-bar">
-                <div class="progress" id="progress"></div>
+            <div class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-header">
+                    <h2><i class="fas fa-chart-line"></i> AI Analysis Results</h2>
+                    <div class="results-actions">
+                        <button class="btn-secondary" onclick="downloadResults()">
+                            <i class="fas fa-download"></i> Download JSON
+                        </button>
+                        <button class="btn-secondary" onclick="generateReport()">
+                            <i class="fas fa-file-pdf"></i> Generate Report
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="ai-summary" id="aiSummary">
+                    <!-- AI Summary will be populated here -->
+                </div>
+
+                <div class="results-grid">
+                    <div class="result-card ai-card">
+                        <h3><i class="fas fa-robot"></i> AI Classification</h3>
+                        <div id="aiClassificationResults"></div>
+                    </div>
+
+                    <div class="result-card marine-card">
+                        <h3><i class="fas fa-water"></i> Deep-Sea Analysis</h3>
+                        <div id="deepSeaResults"></div>
+                    </div>
+
+                    <div class="result-card novel-card">
+                        <h3><i class="fas fa-microscope"></i> Novel Taxa</h3>
+                        <div id="novelTaxaResults"></div>
+                    </div>
+
+                    <div class="result-card edna-card">
+                        <h3><i class="fas fa-dna"></i> eDNA Processing</h3>
+                        <div id="ednaResults"></div>
+                    </div>
+
+                    <div class="result-card">
+                        <h3><i class="fas fa-chart-bar"></i> Sequence Statistics</h3>
+                        <div id="sequenceStats"></div>
+                    </div>
+
+                    <div class="result-card">
+                        <h3><i class="fas fa-leaf"></i> Biodiversity Metrics</h3>
+                        <div id="biodiversityMetrics"></div>
+                    </div>
+
+                    <div class="result-card">
+                        <h3><i class="fas fa-shield-alt"></i> Conservation Status</h3>
+                        <div id="conservationStatus"></div>
+                    </div>
+
+                    <div class="result-card">
+                        <h3><i class="fas fa-vial"></i> Quality Analysis</h3>
+                        <div id="qualityAnalysis"></div>
+                    </div>
+
+                    <div class="result-card full-width">
+                        <h3><i class="fas fa-list"></i> Species Classification</h3>
+                        <div id="speciesClassification"></div>
+                    </div>
+                </div>
+
+                <div class="summary-section">
+                    <h3><i class="fas fa-clipboard-list"></i> Executive Summary</h3>
+                    <div id="executiveSummary"></div>
+                </div>
             </div>
-            <p id="statusText">Analyzing sequences...</p>
-        </div>
+        </main>
 
-        <div class="results-section" id="resultsSection" style="display: none;">
-            <div class="results-header">
-                <h2>Analysis Results</h2>
-                <button class="btn-secondary" onclick="exportResults()">Export JSON</button>
-            </div>
-
-            <div class="results-grid">
-                <div class="result-card">
-                    <h3>📊 Sequence Statistics</h3>
-                    <div id="sequenceStats"></div>
-                </div>
-
-                <div class="result-card">
-                    <h3>🌍 Biodiversity Metrics</h3>
-                    <div id="biodiversityMetrics"></div>
-                </div>
-
-                <div class="result-card">
-                    <h3>🛡️ Conservation Status</h3>
-                    <div id="conservationStatus"></div>
-                </div>
-
-                <div class="result-card">
-                    <h3>🔬 Quality Analysis</h3>
-                    <div id="qualityAnalysis"></div>
-                </div>
-
-                <div class="result-card full-width">
-                    <h3>🧬 Species Classification</h3>
-                    <div id="speciesClassification"></div>
-                </div>
-
-                <div class="result-card">
-                    <h3>🌳 Phylogenetic Analysis</h3>
-                    <div id="phylogeneticAnalysis"></div>
-                </div>
-
-                <div class="result-card">
-                    <h3>🦠 Microbiome Analysis</h3>
-                    <div id="microbiomeAnalysis"></div>
-                </div>
-
-                <div class="result-card">
-                    <h3>⚛️ Quantum Analysis</h3>
-                    <div id="quantumAnalysis"></div>
-                </div>
-
-                <div class="result-card">
-                    <h3>🧪 Protein Prediction</h3>
-                    <div id="proteinAnalysis"></div>
-                </div>
-            </div>
-
-            <div class="summary-section">
-                <h3>📋 Executive Summary</h3>
-                <div id="executiveSummary"></div>
-            </div>
-        </div>
+        <footer class="footer">
+            <p>&copy; 2024 BioMapper AI - Deep-Sea eDNA Analysis Platform</p>
+            <p>Powered by Machine Learning & Database-Independent Classification</p>
+        </footer>
     </div>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>

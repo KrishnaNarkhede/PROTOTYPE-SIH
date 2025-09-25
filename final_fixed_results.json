@@ -1,0 +1,2505 @@
+{
+  "status": "success",
+  "analysis_type": "comprehensive_biodiversity_analysis",
+  "input_file": "biodiversity_sample.fasta",
+  "timestamp": "2025-09-25T14:30:43.358621",
+  "version": "2.0.0",
+  "sequence_statistics": {
+    "total_sequences": 8,
+    "total_base_pairs": 894,
+    "average_length": 111.75,
+    "min_length": 74,
+    "max_length": 256,
+    "median_length": 74.5,
+    "std_deviation": 66.75468148377311
+  },
+  "data_validation": {
+    "total_sequences": 8,
+    "validation_summary": {},
+    "accuracy_metrics": {
+      "average_confidence": 0.843,
+      "high_confidence_count": 7,
+      "medium_confidence_count": 1,
+      "low_confidence_count": 0,
+      "confidence_distribution": {
+        "min": 0.7689,
+        "max": 0.9089,
+        "std": 0.043
+      }
+    },
+    "data_quality_issues": [],
+    "recommendations": []
+  },
+  "enhanced_analysis": [
+    {
+      "ASV_ID": "ASV_5FD35573",
+      "OTU_ID": "OTU_5FD35573",
+      "Representative_Sequence": "ATGCCCTAGCTAGGCTTACGATCGATCGGCTAGCTAGCTAGCTAGCGTAGCTAGCTAGGATCGATGCTAGCTAGC",
+      "Sequence_Length": 75,
+      "GC_Content": 53.33,
+      "Sample_IDs": [
+        "seq_001"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Panthera onca",
+      "Common_Name": "Jaguar",
+      "Conservation_Status": "Near Threatened",
+      "Assignment_Method": "hybrid_embedding_blast",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_028309.1",
+      "Percent_Identity_to_Nearest": 98.5,
+      "Assignment_Confidence": 0.8705,
+      "Kingdom": "Animalia",
+      "Phylum": "Chordata",
+      "Class": "Mammalia",
+      "Order": "Carnivora",
+      "Family": "Felidae",
+      "Genus": "Panthera",
+      "Species": "Panthera onca",
+      "Phylo_Placement_Node": "NODE_05498",
+      "Branch_Length_to_placement": 0.095069,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "apex_predator",
+      "Predicted_Functions": [
+        "carnivory",
+        "territorial_behavior",
+        "large_mammal_predation"
+      ],
+      "Role_Confidence": 0.92,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_098",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "ATGCCCTAGCTAGGCTTACGATCGATCGGCTAGCTAGCTAGCTAGCGTAG...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.95,
+        "enhanced_confidence": 0.8705,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.7333333333333334,
+          "marker_validation": 0.4,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 0.9163157894736843
+      }
+    },
+    {
+      "ASV_ID": "ASV_89107C05",
+      "OTU_ID": "OTU_89107C05",
+      "Representative_Sequence": "ATGCTTAGCTAGGCTTACGATCGGCTAGCTAGCTACGTAGCTAGCTAGCATCGATCGATCGATGCTAGCTAGCTA",
+      "Sequence_Length": 75,
+      "GC_Content": 49.33,
+      "Sample_IDs": [
+        "seq_002"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Panthera tigris",
+      "Common_Name": "Tiger",
+      "Conservation_Status": "Endangered",
+      "Assignment_Method": "hybrid_embedding_blast",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_014770.1",
+      "Percent_Identity_to_Nearest": 97.8,
+      "Assignment_Confidence": 0.8697,
+      "Kingdom": "Animalia",
+      "Phylum": "Chordata",
+      "Class": "Mammalia",
+      "Order": "Carnivora",
+      "Family": "Felidae",
+      "Genus": "Panthera",
+      "Species": "Panthera tigris",
+      "Phylo_Placement_Node": "NODE_03182",
+      "Branch_Length_to_placement": 0.117692,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "primary_producer",
+      "Predicted_Functions": [
+        "photosynthesis",
+        "oxygen_production",
+        "carbon_fixation"
+      ],
+      "Role_Confidence": 0.65,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_082",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ATGCTTAGCTAGGCTTACGATCGGCTAGCTAGCTACGTAGCTAGCTAGCA...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.94,
+        "enhanced_confidence": 0.8697,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.73,
+          "marker_validation": 0.4,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 0.9252127659574468
+      }
+    },
+    {
+      "ASV_ID": "ASV_C51F0427",
+      "OTU_ID": "OTU_C51F0427",
+      "Representative_Sequence": "ATGCGTAGCTAGGCTTACGATCGATCGGCTAGCTAGCTAGCTAGCATCGATCGATCGATCGATCGATCGATCGA",
+      "Sequence_Length": 74,
+      "GC_Content": 51.35,
+      "Sample_IDs": [
+        "seq_003"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Panthera leo",
+      "Common_Name": "Lion",
+      "Conservation_Status": "Vulnerable",
+      "Assignment_Method": "hybrid_embedding_blast",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_001700.1",
+      "Percent_Identity_to_Nearest": 96.9,
+      "Assignment_Confidence": 0.8681,
+      "Kingdom": "Animalia",
+      "Phylum": "Chordata",
+      "Class": "Mammalia",
+      "Order": "Carnivora",
+      "Family": "Felidae",
+      "Genus": "Panthera",
+      "Species": "Panthera leo",
+      "Phylo_Placement_Node": "NODE_02062",
+      "Branch_Length_to_placement": 0.093303,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "primary_producer",
+      "Predicted_Functions": [
+        "photosynthesis",
+        "oxygen_production",
+        "carbon_fixation"
+      ],
+      "Role_Confidence": 0.65,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_062",
+      "Cluster_Members": 5,
+      "Cluster_Representative": "ATGCGTAGCTAGGCTTACGATCGATCGGCTAGCTAGCTAGCTAGCATCGA...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.92,
+        "enhanced_confidence": 0.8681,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.7233333333333333,
+          "marker_validation": 0.4,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 0.9435869565217391
+      }
+    },
+    {
+      "ASV_ID": "ASV_479283C4",
+      "OTU_ID": "OTU_479283C4",
+      "Representative_Sequence": "AGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAACGAGGGTTTCGGCTC",
+      "Sequence_Length": 74,
+      "GC_Content": 55.41,
+      "Sample_IDs": [
+        "seq_004"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "phylum",
+      "Assigned_Name": "Proteobacteria",
+      "Common_Name": "Proteobacteria",
+      "Conservation_Status": "Not Applicable",
+      "Assignment_Method": "silva_classifier",
+      "Nearest_Reference_DB": "SILVA_138",
+      "Nearest_Reference_Acc": "SILVA_138_SSU_Ref_Nr99_tax_silva",
+      "Percent_Identity_to_Nearest": 92.3,
+      "Assignment_Confidence": 0.8049,
+      "Kingdom": "Bacteria",
+      "Phylum": "Proteobacteria",
+      "Class": "Gammaproteobacteria",
+      "Order": "Unknown",
+      "Family": "Unknown",
+      "Genus": "Unknown",
+      "Species": "Unknown",
+      "Phylo_Placement_Node": "NODE_07219",
+      "Branch_Length_to_placement": 0.076943,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Bacteria_Proteobacteria_Gammaproteobacteria",
+      "Placement_Taxonomic_Hint": "Bacteria;Proteobacteria;Gammaproteobacteria",
+      "Predicted_Ecological_Role": "decomposer",
+      "Predicted_Functions": [
+        "organic_matter_breakdown",
+        "nutrient_cycling",
+        "biofilm_formation"
+      ],
+      "Role_Confidence": 0.78,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_019",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "AGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCCTAATACATG...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.78,
+        "enhanced_confidence": 0.8049,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.51,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9615,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.0319230769230767
+      }
+    },
+    {
+      "ASV_ID": "ASV_75475483",
+      "OTU_ID": "OTU_75475483",
+      "Representative_Sequence": "AGGGTGCGAGCGTTGCGGCCGGTAGGGTTCCTAGCCTGGTTGATCCTGCCAGTAGTCATATGCTGGAGAGTTTG",
+      "Sequence_Length": 74,
+      "GC_Content": 58.11,
+      "Sample_IDs": [
+        "seq_005"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "phylum",
+      "Assigned_Name": "Proteobacteria",
+      "Common_Name": "Proteobacteria",
+      "Conservation_Status": "Not Applicable",
+      "Assignment_Method": "silva_classifier",
+      "Nearest_Reference_DB": "SILVA_138",
+      "Nearest_Reference_Acc": "SILVA_138_SSU_Ref_Nr99_tax_silva",
+      "Percent_Identity_to_Nearest": 92.3,
+      "Assignment_Confidence": 0.8049,
+      "Kingdom": "Bacteria",
+      "Phylum": "Proteobacteria",
+      "Class": "Gammaproteobacteria",
+      "Order": "Unknown",
+      "Family": "Unknown",
+      "Genus": "Unknown",
+      "Species": "Unknown",
+      "Phylo_Placement_Node": "NODE_00900",
+      "Branch_Length_to_placement": 0.106533,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Bacteria_Proteobacteria_Gammaproteobacteria",
+      "Placement_Taxonomic_Hint": "Bacteria;Proteobacteria;Gammaproteobacteria",
+      "Predicted_Ecological_Role": "decomposer",
+      "Predicted_Functions": [
+        "organic_matter_breakdown",
+        "nutrient_cycling",
+        "biofilm_formation"
+      ],
+      "Role_Confidence": 0.78,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_000",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "AGGGTGCGAGCGTTGCGGCCGGTAGGGTTCCTAGCCTGGTTGATCCTGCC...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.78,
+        "enhanced_confidence": 0.8049,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.51,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9615,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.0319230769230767
+      }
+    },
+    {
+      "ASV_ID": "ASV_ADDD00FF",
+      "OTU_ID": "OTU_ADDD00FF",
+      "Representative_Sequence": "ATGGTGACCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTGAACGTGGATGAAGTTGGT",
+      "Sequence_Length": 74,
+      "GC_Content": 55.41,
+      "Sample_IDs": [
+        "seq_006"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "kingdom",
+      "Assigned_Name": "Plantae",
+      "Common_Name": "Plant",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "chloroplast_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_chloroplast",
+      "Percent_Identity_to_Nearest": 94.2,
+      "Assignment_Confidence": 0.8481,
+      "Kingdom": "Plantae",
+      "Phylum": "Streptophyta",
+      "Class": "Unknown",
+      "Order": "Unknown",
+      "Family": "Unknown",
+      "Genus": "Unknown",
+      "Species": "Unknown",
+      "Phylo_Placement_Node": "NODE_02995",
+      "Branch_Length_to_placement": 0.029189,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "primary_producer",
+      "Predicted_Functions": [
+        "photosynthesis",
+        "oxygen_production",
+        "carbon_fixation"
+      ],
+      "Role_Confidence": 0.65,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_095",
+      "Cluster_Members": 4,
+      "Cluster_Representative": "ATGGTGACCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGC...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.88,
+        "enhanced_confidence": 0.8481,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.6460366666666667,
+          "marker_validation": 0.4,
+          "cross_reference": 0.996,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 0.96375
+      }
+    },
+    {
+      "ASV_ID": "ASV_D336F0DB",
+      "OTU_ID": "OTU_D336F0DB",
+      "Representative_Sequence": "ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTA",
+      "Sequence_Length": 256,
+      "GC_Content": 50.0,
+      "Sample_IDs": [
+        "Panthera_onca_001"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "kingdom",
+      "Assigned_Name": "Eukaryota",
+      "Common_Name": "Unknown Eukaryote",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "embedding_classifier",
+      "Nearest_Reference_DB": "PR2_v4.14",
+      "Nearest_Reference_Acc": "PR2_rRNA_gene_db",
+      "Percent_Identity_to_Nearest": 85.2,
+      "Assignment_Confidence": 0.7689,
+      "Kingdom": "Eukaryota",
+      "Phylum": "Stramenopiles",
+      "Class": "Bacillariophyceae",
+      "Order": "Naviculales",
+      "Family": "Unknown",
+      "Genus": "Unknown",
+      "Species": "Unknown",
+      "Phylo_Placement_Node": "NODE_02652",
+      "Branch_Length_to_placement": 0.111364,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "primary_producer",
+      "Predicted_Functions": [
+        "photosynthesis",
+        "oxygen_production",
+        "carbon_fixation"
+      ],
+      "Role_Confidence": 0.65,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Candidate_Novel",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_052",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGAT...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.65,
+        "enhanced_confidence": 0.7689,
+        "validation_scores": {
+          "sequence_similarity": 0.975,
+          "phylogenetic_consistency": 0.43333333333333335,
+          "marker_validation": 0.4,
+          "cross_reference": 0.901,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.182923076923077
+      }
+    },
+    {
+      "ASV_ID": "ASV_021CE408",
+      "OTU_ID": "OTU_021CE408",
+      "Representative_Sequence": "GGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAACCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAATTGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAA",
+      "Sequence_Length": 192,
+      "GC_Content": 50.0,
+      "Sample_IDs": [
+        "Felis_catus_002"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Felis catus",
+      "Common_Name": "Domestic Cat",
+      "Conservation_Status": "Domesticated",
+      "Assignment_Method": "hybrid_embedding_blast",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_001700.2",
+      "Percent_Identity_to_Nearest": 99.1,
+      "Assignment_Confidence": 0.9089,
+      "Kingdom": "Animalia",
+      "Phylum": "Chordata",
+      "Class": "Mammalia",
+      "Order": "Carnivora",
+      "Family": "Felidae",
+      "Genus": "Felis",
+      "Species": "Felis catus",
+      "Phylo_Placement_Node": "NODE_07762",
+      "Branch_Length_to_placement": 0.015487,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "primary_producer",
+      "Predicted_Functions": [
+        "photosynthesis",
+        "oxygen_production",
+        "carbon_fixation"
+      ],
+      "Role_Confidence": 0.65,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_062",
+      "Cluster_Members": 2,
+      "Cluster_Representative": "GGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGG...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.96,
+        "enhanced_confidence": 0.9089,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.9183766666666666,
+          "marker_validation": 0.4,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 0.9467708333333335
+      }
+    }
+  ],
+  "species_classification": [
+    {
+      "ASV_ID": "ASV_5FD35573",
+      "OTU_ID": "OTU_5FD35573",
+      "Representative_Sequence": "ATGCCCTAGCTAGGCTTACGATCGATCGGCTAGCTAGCTAGCTAGCGTAGCTAGCTAGGATCGATGCTAGCTAGC",
+      "Sequence_Length": 75,
+      "GC_Content": 53.33,
+      "Sample_IDs": [
+        "seq_001"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Panthera onca",
+      "Common_Name": "Jaguar",
+      "Conservation_Status": "Near Threatened",
+      "Assignment_Method": "hybrid_embedding_blast",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_028309.1",
+      "Percent_Identity_to_Nearest": 98.5,
+      "Assignment_Confidence": 0.8705,
+      "Kingdom": "Animalia",
+      "Phylum": "Chordata",
+      "Class": "Mammalia",
+      "Order": "Carnivora",
+      "Family": "Felidae",
+      "Genus": "Panthera",
+      "Species": "Panthera onca",
+      "Phylo_Placement_Node": "NODE_05498",
+      "Branch_Length_to_placement": 0.095069,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Opisthokonta_Metazoa_Chordata",
+      "Placement_Taxonomic_Hint": "Eukaryota;Opisthokonta;Metazoa;Chordata;Vertebrata;Mammalia",
+      "Predicted_Ecological_Role": "apex_predator",
+      "Predicted_Functions": [
+        "carnivory",
+        "territorial_behavior",
+        "large_mammal_predation"
+      ],
+      "Role_Confidence": 0.92,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_098",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "ATGCCCTAGCTAGGCTTACGATCGATCGGCTAGCTAGCTAGCTAGCGTAG...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.95,
+        "enhanced_confidence": 0.8705,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.7333333333333334,
+          "marker_validation": 0.4,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 0.9163157894736843
+      }
+    },
+    {
+      "ASV_ID": "ASV_89107C05",
+      "OTU_ID": "OTU_89107C05",
+      "Representative_Sequence": "ATGCTTAGCTAGGCTTACGATCGGCTAGCTAGCTACGTAGCTAGCTAGCATCGATCGATCGATGCTAGCTAGCTA",
+      "Sequence_Length": 75,
+      "GC_Content": 49.33,
+      "Sample_IDs": [
+        "seq_002"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Panthera tigris",
+      "Common_Name": "Tiger",
+      "Conservation_Status": "Endangered",
+      "Assignment_Method": "hybrid_embedding_blast",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_014770.1",
+      "Percent_Identity_to_Nearest": 97.8,
+      "Assignment_Confidence": 0.8697,
+      "Kingdom": "Animalia",
+      "Phylum": "Chordata",
+      "Class": "Mammalia",
+      "Order": "Carnivora",
+      "Family": "Felidae",
+      "Genus": "Panthera",
+      "Species": "Panthera tigris",
+      "Phylo_Placement_Node": "NODE_03182",
+      "Branch_Length_to_placement": 0.117692,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "primary_producer",
+      "Predicted_Functions": [
+        "photosynthesis",
+        "oxygen_production",
+        "carbon_fixation"
+      ],
+      "Role_Confidence": 0.65,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_082",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "ATGCTTAGCTAGGCTTACGATCGGCTAGCTAGCTACGTAGCTAGCTAGCA...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.94,
+        "enhanced_confidence": 0.8697,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.73,
+          "marker_validation": 0.4,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 0.9252127659574468
+      }
+    },
+    {
+      "ASV_ID": "ASV_C51F0427",
+      "OTU_ID": "OTU_C51F0427",
+      "Representative_Sequence": "ATGCGTAGCTAGGCTTACGATCGATCGGCTAGCTAGCTAGCTAGCATCGATCGATCGATCGATCGATCGATCGA",
+      "Sequence_Length": 74,
+      "GC_Content": 51.35,
+      "Sample_IDs": [
+        "seq_003"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Panthera leo",
+      "Common_Name": "Lion",
+      "Conservation_Status": "Vulnerable",
+      "Assignment_Method": "hybrid_embedding_blast",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_001700.1",
+      "Percent_Identity_to_Nearest": 96.9,
+      "Assignment_Confidence": 0.8681,
+      "Kingdom": "Animalia",
+      "Phylum": "Chordata",
+      "Class": "Mammalia",
+      "Order": "Carnivora",
+      "Family": "Felidae",
+      "Genus": "Panthera",
+      "Species": "Panthera leo",
+      "Phylo_Placement_Node": "NODE_02062",
+      "Branch_Length_to_placement": 0.093303,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "primary_producer",
+      "Predicted_Functions": [
+        "photosynthesis",
+        "oxygen_production",
+        "carbon_fixation"
+      ],
+      "Role_Confidence": 0.65,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_062",
+      "Cluster_Members": 5,
+      "Cluster_Representative": "ATGCGTAGCTAGGCTTACGATCGATCGGCTAGCTAGCTAGCTAGCATCGA...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.92,
+        "enhanced_confidence": 0.8681,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.7233333333333333,
+          "marker_validation": 0.4,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 0.9435869565217391
+      }
+    },
+    {
+      "ASV_ID": "ASV_479283C4",
+      "OTU_ID": "OTU_479283C4",
+      "Representative_Sequence": "AGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAACGAGGGTTTCGGCTC",
+      "Sequence_Length": 74,
+      "GC_Content": 55.41,
+      "Sample_IDs": [
+        "seq_004"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "phylum",
+      "Assigned_Name": "Proteobacteria",
+      "Common_Name": "Proteobacteria",
+      "Conservation_Status": "Not Applicable",
+      "Assignment_Method": "silva_classifier",
+      "Nearest_Reference_DB": "SILVA_138",
+      "Nearest_Reference_Acc": "SILVA_138_SSU_Ref_Nr99_tax_silva",
+      "Percent_Identity_to_Nearest": 92.3,
+      "Assignment_Confidence": 0.8049,
+      "Kingdom": "Bacteria",
+      "Phylum": "Proteobacteria",
+      "Class": "Gammaproteobacteria",
+      "Order": "Unknown",
+      "Family": "Unknown",
+      "Genus": "Unknown",
+      "Species": "Unknown",
+      "Phylo_Placement_Node": "NODE_07219",
+      "Branch_Length_to_placement": 0.076943,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Bacteria_Proteobacteria_Gammaproteobacteria",
+      "Placement_Taxonomic_Hint": "Bacteria;Proteobacteria;Gammaproteobacteria",
+      "Predicted_Ecological_Role": "decomposer",
+      "Predicted_Functions": [
+        "organic_matter_breakdown",
+        "nutrient_cycling",
+        "biofilm_formation"
+      ],
+      "Role_Confidence": 0.78,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_019",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "AGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCCTAATACATG...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.78,
+        "enhanced_confidence": 0.8049,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.51,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9615,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.0319230769230767
+      }
+    },
+    {
+      "ASV_ID": "ASV_75475483",
+      "OTU_ID": "OTU_75475483",
+      "Representative_Sequence": "AGGGTGCGAGCGTTGCGGCCGGTAGGGTTCCTAGCCTGGTTGATCCTGCCAGTAGTCATATGCTGGAGAGTTTG",
+      "Sequence_Length": 74,
+      "GC_Content": 58.11,
+      "Sample_IDs": [
+        "seq_005"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "phylum",
+      "Assigned_Name": "Proteobacteria",
+      "Common_Name": "Proteobacteria",
+      "Conservation_Status": "Not Applicable",
+      "Assignment_Method": "silva_classifier",
+      "Nearest_Reference_DB": "SILVA_138",
+      "Nearest_Reference_Acc": "SILVA_138_SSU_Ref_Nr99_tax_silva",
+      "Percent_Identity_to_Nearest": 92.3,
+      "Assignment_Confidence": 0.8049,
+      "Kingdom": "Bacteria",
+      "Phylum": "Proteobacteria",
+      "Class": "Gammaproteobacteria",
+      "Order": "Unknown",
+      "Family": "Unknown",
+      "Genus": "Unknown",
+      "Species": "Unknown",
+      "Phylo_Placement_Node": "NODE_00900",
+      "Branch_Length_to_placement": 0.106533,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Bacteria_Proteobacteria_Gammaproteobacteria",
+      "Placement_Taxonomic_Hint": "Bacteria;Proteobacteria;Gammaproteobacteria",
+      "Predicted_Ecological_Role": "decomposer",
+      "Predicted_Functions": [
+        "organic_matter_breakdown",
+        "nutrient_cycling",
+        "biofilm_formation"
+      ],
+      "Role_Confidence": 0.78,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_000",
+      "Cluster_Members": 1,
+      "Cluster_Representative": "AGGGTGCGAGCGTTGCGGCCGGTAGGGTTCCTAGCCTGGTTGATCCTGCC...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.78,
+        "enhanced_confidence": 0.8049,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.51,
+          "marker_validation": 0.4,
+          "cross_reference": 0.9615,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.0319230769230767
+      }
+    },
+    {
+      "ASV_ID": "ASV_ADDD00FF",
+      "OTU_ID": "OTU_ADDD00FF",
+      "Representative_Sequence": "ATGGTGACCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTGAACGTGGATGAAGTTGGT",
+      "Sequence_Length": 74,
+      "GC_Content": 55.41,
+      "Sample_IDs": [
+        "seq_006"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "kingdom",
+      "Assigned_Name": "Plantae",
+      "Common_Name": "Plant",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "chloroplast_classifier",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_chloroplast",
+      "Percent_Identity_to_Nearest": 94.2,
+      "Assignment_Confidence": 0.8481,
+      "Kingdom": "Plantae",
+      "Phylum": "Streptophyta",
+      "Class": "Unknown",
+      "Order": "Unknown",
+      "Family": "Unknown",
+      "Genus": "Unknown",
+      "Species": "Unknown",
+      "Phylo_Placement_Node": "NODE_02995",
+      "Branch_Length_to_placement": 0.029189,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "primary_producer",
+      "Predicted_Functions": [
+        "photosynthesis",
+        "oxygen_production",
+        "carbon_fixation"
+      ],
+      "Role_Confidence": 0.65,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_095",
+      "Cluster_Members": 4,
+      "Cluster_Representative": "ATGGTGACCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGC...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Medium",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.88,
+        "enhanced_confidence": 0.8481,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.6460366666666667,
+          "marker_validation": 0.4,
+          "cross_reference": 0.996,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 0.96375
+      }
+    },
+    {
+      "ASV_ID": "ASV_D336F0DB",
+      "OTU_ID": "OTU_D336F0DB",
+      "Representative_Sequence": "ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTA",
+      "Sequence_Length": 256,
+      "GC_Content": 50.0,
+      "Sample_IDs": [
+        "Panthera_onca_001"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "kingdom",
+      "Assigned_Name": "Eukaryota",
+      "Common_Name": "Unknown Eukaryote",
+      "Conservation_Status": "Not Evaluated",
+      "Assignment_Method": "embedding_classifier",
+      "Nearest_Reference_DB": "PR2_v4.14",
+      "Nearest_Reference_Acc": "PR2_rRNA_gene_db",
+      "Percent_Identity_to_Nearest": 85.2,
+      "Assignment_Confidence": 0.7689,
+      "Kingdom": "Eukaryota",
+      "Phylum": "Stramenopiles",
+      "Class": "Bacillariophyceae",
+      "Order": "Naviculales",
+      "Family": "Unknown",
+      "Genus": "Unknown",
+      "Species": "Unknown",
+      "Phylo_Placement_Node": "NODE_02652",
+      "Branch_Length_to_placement": 0.111364,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "primary_producer",
+      "Predicted_Functions": [
+        "photosynthesis",
+        "oxygen_production",
+        "carbon_fixation"
+      ],
+      "Role_Confidence": 0.65,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Candidate_Novel",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_052",
+      "Cluster_Members": 3,
+      "Cluster_Representative": "ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGAT...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.65,
+        "enhanced_confidence": 0.7689,
+        "validation_scores": {
+          "sequence_similarity": 0.975,
+          "phylogenetic_consistency": 0.43333333333333335,
+          "marker_validation": 0.4,
+          "cross_reference": 0.901,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 1.182923076923077
+      }
+    },
+    {
+      "ASV_ID": "ASV_021CE408",
+      "OTU_ID": "OTU_021CE408",
+      "Representative_Sequence": "GGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAACCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAATTGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAA",
+      "Sequence_Length": 192,
+      "GC_Content": 50.0,
+      "Sample_IDs": [
+        "Felis_catus_002"
+      ],
+      "Raw_Read_Count": 1,
+      "Corrected_Count": 1,
+      "Relative_Abundance": 0.125,
+      "Prevalence": 1.0,
+      "Normalized_Abundance_CPM": 125000.0,
+      "Normalized_Abundance_CLR": 0.6931,
+      "Assigned_Rank": "species",
+      "Assigned_Name": "Felis catus",
+      "Common_Name": "Domestic Cat",
+      "Conservation_Status": "Domesticated",
+      "Assignment_Method": "hybrid_embedding_blast",
+      "Nearest_Reference_DB": "NCBI_nt",
+      "Nearest_Reference_Acc": "NC_001700.2",
+      "Percent_Identity_to_Nearest": 99.1,
+      "Assignment_Confidence": 0.9089,
+      "Kingdom": "Animalia",
+      "Phylum": "Chordata",
+      "Class": "Mammalia",
+      "Order": "Carnivora",
+      "Family": "Felidae",
+      "Genus": "Felis",
+      "Species": "Felis catus",
+      "Phylo_Placement_Node": "NODE_07762",
+      "Branch_Length_to_placement": 0.015487,
+      "Placement_Backbone": "SILVA_138_SSU_tree_v2.1",
+      "CladeLabel": "Eukaryota_Diaphoretickes_Stramenopiles",
+      "Placement_Taxonomic_Hint": "Eukaryota;Diaphoretickes;Stramenopiles;Ochrophyta",
+      "Predicted_Ecological_Role": "primary_producer",
+      "Predicted_Functions": [
+        "photosynthesis",
+        "oxygen_production",
+        "carbon_fixation"
+      ],
+      "Role_Confidence": 0.65,
+      "Novelty_Score": 0.4,
+      "Novelty_Flag": "Known",
+      "Quality_Score": 1.0,
+      "Marker_Type": "Unknown",
+      "Expected_Amplicon_Region": "Unknown",
+      "Primer_Match": {
+        "forward": false,
+        "reverse": false
+      },
+      "Chimera_Flag": false,
+      "LowComplexity_Flag": false,
+      "Contaminant_Flag": false,
+      "AmbiguousBases_Count": 0,
+      "Cluster_ID": "CLUSTER_062",
+      "Cluster_Members": 2,
+      "Cluster_Representative": "GGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGG...",
+      "First_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Last_Detected_Date": "2025-09-25T14:30:43.358621",
+      "Depth_Range": "Unknown",
+      "Geographic_Distribution": "Unknown",
+      "Pipeline_Version": "CMLRE-AI-v2.0",
+      "Parameters": {
+        "denoising_threshold": 0.01,
+        "clustering_threshold": 0.97,
+        "classifier_model": "hybrid_v2.1",
+        "quality_threshold": 0.5
+      },
+      "Compute_Resources_used": "CPU: 8 cores, RAM: 32GB, GPU: None",
+      "Analysis_Timestamp": "2025-09-25T14:30:43.355062",
+      "Curation_Status": "unreviewed",
+      "Curator_Notes": "",
+      "Local_Anchor_ID": null,
+      "Verification_Priority": "Low",
+      "Confidence_Enhancement": {
+        "original_confidence": 0.96,
+        "enhanced_confidence": 0.9089,
+        "validation_scores": {
+          "sequence_similarity": 1.0,
+          "phylogenetic_consistency": 0.9183766666666666,
+          "marker_validation": 0.4,
+          "cross_reference": 1.0,
+          "statistical": 1.0
+        },
+        "enhancement_factor": 0.9467708333333335
+      }
+    }
+  ],
+  "ai_classification": {
+    "predictions": [
+      {
+        "sequence_id": "seq_001",
+        "ai_prediction": {
+          "sequence_id": "seq_001",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "seq_001",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.2,
+          "habitat_prediction": "marine_surface",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "seq_002",
+        "ai_prediction": {
+          "sequence_id": "seq_002",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "seq_002",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.2,
+          "habitat_prediction": "marine_surface",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "seq_003",
+        "ai_prediction": {
+          "sequence_id": "seq_003",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "seq_003",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.2,
+          "habitat_prediction": "marine_surface",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "seq_004",
+        "ai_prediction": {
+          "sequence_id": "seq_004",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "seq_004",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.2,
+          "habitat_prediction": "deep_sea",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "seq_005",
+        "ai_prediction": {
+          "sequence_id": "seq_005",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "seq_005",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.2,
+          "habitat_prediction": "deep_sea",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "seq_006",
+        "ai_prediction": {
+          "sequence_id": "seq_006",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "seq_006",
+          "cluster_id": 1,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.2,
+          "habitat_prediction": "deep_sea",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      },
+      {
+        "sequence_id": "Panthera_onca_001",
+        "ai_prediction": {
+          "sequence_id": "Panthera_onca_001",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Panthera_onca_001",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.2,
+          "habitat_prediction": "marine_surface",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": true
+      },
+      {
+        "sequence_id": "Felis_catus_002",
+        "ai_prediction": {
+          "sequence_id": "Felis_catus_002",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised"
+        },
+        "marine_prediction": {
+          "sequence_id": "Felis_catus_002",
+          "cluster_id": 0,
+          "novelty_score": 1.0,
+          "is_novel_taxa": true,
+          "confidence": 0.8999999999999999,
+          "classification_method": "ai_unsupervised",
+          "marine_likelihood": 0.7,
+          "habitat_prediction": "marine_surface",
+          "deep_sea_candidate": false
+        },
+        "confidence": 0.8999999999999999,
+        "is_novel_taxa": false
+      }
+    ],
+    "ai_performance": {
+      "model_trained": true,
+      "training_accuracy": 1.0,
+      "validation_accuracy": 0.0,
+      "n_classes": 2
+    },
+    "clustering_quality": 0.9000000000000001,
+    "novel_taxa_count": 1,
+    "known_species_count": 7,
+    "confidence_metrics": {
+      "average_confidence": 0.9000000000000001,
+      "high_confidence_count": 8,
+      "total_predictions": 8
+    }
+  },
+  "biodiversity_metrics": {
+    "species_richness": 5,
+    "shannon_diversity_index": 1.4942,
+    "pielou_evenness": 0.9284,
+    "simpson_index": 0.75,
+    "chao1_estimator": 9.5,
+    "species_abundance": {
+      "Mus musculus": 2,
+      "Canis lupus": 1,
+      "Unknown Species": 3,
+      "Panthera onca": 1,
+      "Felis catus": 1
+    },
+    "dominant_species": "Unknown Species",
+    "rarest_species": "Canis lupus"
+  },
+  "quality_analysis": {
+    "gc_content": 51.9,
+    "nucleotide_composition": {
+      "A": 207,
+      "T": 223,
+      "G": 251,
+      "C": 213
+    },
+    "sequence_complexity": 0.0045,
+    "average_quality_score": 35.6,
+    "quality_distribution": {
+      "high_quality": 3,
+      "medium_quality": 5,
+      "low_quality": 0
+    }
+  },
+  "conservation_assessment": {
+    "total_species_assessed": 8,
+    "threatened_species_count": 1,
+    "priority_species": [
+      "Panthera onca"
+    ],
+    "conservation_alerts": [
+      "Conservation Alert: Panthera onca is Near Threatened"
+    ],
+    "conservation_priority": "High",
+    "recommendations": [
+      "Implement monitoring program for Near Threatened species",
+      "Assess habitat quality and threats"
+    ]
+  },
+  "phylogenetic_analysis": {
+    "newick_tree": "((seq_001,seq_003),seq_002,(seq_004,seq_005,seq_006),(Panthera_onca_001,Felis_catus_002));",
+    "families_identified": 4,
+    "family_distribution": {
+      "Muridae": [
+        "seq_001",
+        "seq_003"
+      ],
+      "Canidae": [
+        "seq_002"
+      ],
+      "Unknown": [
+        "seq_004",
+        "seq_005",
+        "seq_006"
+      ],
+      "Felidae": [
+        "Panthera_onca_001",
+        "Felis_catus_002"
+      ]
+    },
+    "tree_depth": 3,
+    "total_nodes": 8
+  },
+  "deepsea_analysis": {
+    "deep_sea_classifications": [
+      {
+        "sequence_id": "seq_001",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "unknown_marine",
+        "depth_zone": "bathypelagic",
+        "predicted_taxa": "unknown_taxa",
+        "marine_confidence": 0.1,
+        "depth_confidence": 0.5,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "seq_002",
+        "is_marine": false,
+        "is_deep_sea": false,
+        "is_eukaryotic": false,
+        "habitat": "unknown_marine",
+        "depth_zone": "mesopelagic",
+        "predicted_taxa": "unknown_taxa",
+        "marine_confidence": 0.1,
+        "depth_confidence": 0.5,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0
+      },
+      {
+        "sequence_id": "seq_003",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "unknown_marine",
+        "depth_zone": "bathypelagic",
+        "predicted_taxa": "unknown_taxa",
+        "marine_confidence": 0.1,
+        "depth_confidence": 0.5,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "seq_004",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "abyssal_plain",
+        "depth_zone": "abyssopelagic",
+        "predicted_taxa": "unknown_taxa",
+        "marine_confidence": 0.3,
+        "depth_confidence": 0.8,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "seq_005",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "abyssal_plain",
+        "depth_zone": "abyssopelagic",
+        "predicted_taxa": "unknown_taxa",
+        "marine_confidence": 0.3,
+        "depth_confidence": 0.8,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "seq_006",
+        "is_marine": false,
+        "is_deep_sea": true,
+        "is_eukaryotic": false,
+        "habitat": "abyssal_plain",
+        "depth_zone": "abyssopelagic",
+        "predicted_taxa": "unknown_taxa",
+        "marine_confidence": 0.3,
+        "depth_confidence": 0.8,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.4
+      },
+      {
+        "sequence_id": "Panthera_onca_001",
+        "is_marine": false,
+        "is_deep_sea": false,
+        "is_eukaryotic": false,
+        "habitat": "unknown_marine",
+        "depth_zone": "mesopelagic",
+        "predicted_taxa": "unknown_taxa",
+        "marine_confidence": 0.1,
+        "depth_confidence": 0.5,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0
+      },
+      {
+        "sequence_id": "Felis_catus_002",
+        "is_marine": true,
+        "is_deep_sea": false,
+        "is_eukaryotic": false,
+        "habitat": "hydrothermal_vent",
+        "depth_zone": "mesopelagic",
+        "predicted_taxa": "arthropoda",
+        "marine_confidence": 0.6666666666666666,
+        "depth_confidence": 0.7,
+        "eukaryotic_score": 0,
+        "optimization_applied": true,
+        "deep_sea_relevance": 0.3
+      }
+    ],
+    "marine_context_analysis": {
+      "habitat_predictions": [
+        {
+          "sequence_id": "seq_001",
+          "predicted_habitat": "unknown_marine",
+          "confidence": 0.1,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "seq_002",
+          "predicted_habitat": "unknown_marine",
+          "confidence": 0.1,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "seq_003",
+          "predicted_habitat": "unknown_marine",
+          "confidence": 0.1,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "seq_004",
+          "predicted_habitat": "abyssal_plain",
+          "confidence": 0.3,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "seq_005",
+          "predicted_habitat": "abyssal_plain",
+          "confidence": 0.3,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "seq_006",
+          "predicted_habitat": "abyssal_plain",
+          "confidence": 0.3,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Panthera_onca_001",
+          "predicted_habitat": "unknown_marine",
+          "confidence": 0.1,
+          "supporting_patterns": []
+        },
+        {
+          "sequence_id": "Felis_catus_002",
+          "predicted_habitat": "hydrothermal_vent",
+          "confidence": 0.6666666666666666,
+          "supporting_patterns": [
+            "TAAGGCCT",
+            "GGCCTTAA"
+          ]
+        }
+      ],
+      "depth_estimates": [
+        {
+          "sequence_id": "seq_001",
+          "depth_zone": "bathypelagic",
+          "depth_confidence": 0.5,
+          "depth_indicators": [
+            "gc_content_0.533",
+            "gc_content_0.533"
+          ]
+        },
+        {
+          "sequence_id": "seq_002",
+          "depth_zone": "mesopelagic",
+          "depth_confidence": 0.5,
+          "depth_indicators": [
+            "gc_content_0.493",
+            "gc_content_0.493"
+          ]
+        },
+        {
+          "sequence_id": "seq_003",
+          "depth_zone": "bathypelagic",
+          "depth_confidence": 0.5,
+          "depth_indicators": [
+            "gc_content_0.514",
+            "gc_content_0.514"
+          ]
+        },
+        {
+          "sequence_id": "seq_004",
+          "depth_zone": "abyssopelagic",
+          "depth_confidence": 0.8,
+          "depth_indicators": [
+            "complexity_0.873",
+            "complexity_0.873",
+            "complexity_0.873",
+            "gc_content_0.554",
+            "complexity_0.873",
+            "gc_content_0.554",
+            "complexity_0.873"
+          ]
+        },
+        {
+          "sequence_id": "seq_005",
+          "depth_zone": "abyssopelagic",
+          "depth_confidence": 0.8,
+          "depth_indicators": [
+            "complexity_0.873",
+            "complexity_0.873",
+            "complexity_0.873",
+            "gc_content_0.581",
+            "complexity_0.873",
+            "gc_content_0.581",
+            "complexity_0.873"
+          ]
+        },
+        {
+          "sequence_id": "seq_006",
+          "depth_zone": "abyssopelagic",
+          "depth_confidence": 0.8,
+          "depth_indicators": [
+            "complexity_0.817",
+            "complexity_0.817",
+            "complexity_0.817",
+            "gc_content_0.554",
+            "complexity_0.817",
+            "gc_content_0.554",
+            "complexity_0.817"
+          ]
+        },
+        {
+          "sequence_id": "Panthera_onca_001",
+          "depth_zone": "mesopelagic",
+          "depth_confidence": 0.5,
+          "depth_indicators": [
+            "gc_content_0.500",
+            "gc_content_0.500",
+            "gc_content_0.500"
+          ]
+        },
+        {
+          "sequence_id": "Felis_catus_002",
+          "depth_zone": "mesopelagic",
+          "depth_confidence": 0.7,
+          "depth_indicators": [
+            "osmotic_regulation_pattern",
+            "gc_content_0.500",
+            "osmotic_regulation_pattern",
+            "gc_content_0.500",
+            "osmotic_regulation_pattern",
+            "gc_content_0.500",
+            "osmotic_regulation_pattern",
+            "osmotic_regulation_pattern"
+          ]
+        }
+      ],
+      "marine_taxa_detected": [
+        {
+          "sequence_id": "seq_001",
+          "predicted_taxa": "unknown_taxa",
+          "taxa_confidence": 0.1,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "seq_002",
+          "predicted_taxa": "unknown_taxa",
+          "taxa_confidence": 0.1,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "seq_003",
+          "predicted_taxa": "unknown_taxa",
+          "taxa_confidence": 0.1,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "seq_004",
+          "predicted_taxa": "unknown_taxa",
+          "taxa_confidence": 0.1,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "seq_005",
+          "predicted_taxa": "unknown_taxa",
+          "taxa_confidence": 0.1,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "seq_006",
+          "predicted_taxa": "unknown_taxa",
+          "taxa_confidence": 0.1,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "Panthera_onca_001",
+          "predicted_taxa": "unknown_taxa",
+          "taxa_confidence": 0.1,
+          "taxonomic_markers": []
+        },
+        {
+          "sequence_id": "Felis_catus_002",
+          "predicted_taxa": "arthropoda",
+          "taxa_confidence": 0.95,
+          "taxonomic_markers": [
+            "TTCCGGAA",
+            "CCGGAATT",
+            "GGAATTCC"
+          ]
+        }
+      ],
+      "environmental_indicators": {
+        "habitat_distribution": {
+          "unknown_marine": 4,
+          "abyssal_plain": 3,
+          "hydrothermal_vent": 1
+        },
+        "depth_distribution": {
+          "bathypelagic": 2,
+          "mesopelagic": 3,
+          "abyssopelagic": 3
+        },
+        "average_habitat_confidence": 0.24583333333333335,
+        "average_depth_confidence": 0.6375,
+        "dominant_habitat": "unknown_marine",
+        "dominant_depth": "mesopelagic"
+      }
+    },
+    "eukaryotic_sequences": [],
+    "optimization_summary": {
+      "total_sequences": 8,
+      "marine_sequences": 1,
+      "deep_sea_sequences": 5,
+      "eukaryotic_sequences": 0,
+      "high_relevance_sequences": 0
+    }
+  },
+  "independent_classification": {
+    "classifications": [
+      {
+        "sequence_id": "seq_001",
+        "cluster_id": 0,
+        "predicted_taxonomic_level": "viral",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          75,
+          0.5333333333333333,
+          0.4666666666666667,
+          0.4305555555555556,
+          2.0,
+          0.9441204169766123
+        ]
+      },
+      {
+        "sequence_id": "seq_002",
+        "cluster_id": 1,
+        "predicted_taxonomic_level": "viral",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          75,
+          0.49333333333333335,
+          0.5066666666666667,
+          0.4027777777777778,
+          1.44,
+          0.9386203185272982
+        ]
+      },
+      {
+        "sequence_id": "seq_003",
+        "cluster_id": 2,
+        "predicted_taxonomic_level": "viral",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          74,
+          0.5135135135135135,
+          0.4864864864864865,
+          0.36619718309859156,
+          2.189189189189189,
+          0.9576449709250044
+        ]
+      },
+      {
+        "sequence_id": "seq_004",
+        "cluster_id": 3,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          74,
+          0.5540540540540541,
+          0.44594594594594594,
+          0.8732394366197183,
+          0.0,
+          0.979780931241327
+        ]
+      },
+      {
+        "sequence_id": "seq_005",
+        "cluster_id": 4,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          74,
+          0.581081081081081,
+          0.4189189189189189,
+          0.8732394366197183,
+          0.0,
+          0.9869419906311513
+        ]
+      },
+      {
+        "sequence_id": "seq_006",
+        "cluster_id": 5,
+        "predicted_taxonomic_level": "eukaryotic",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          74,
+          0.5540540540540541,
+          0.44594594594594594,
+          0.8169014084507042,
+          0.0,
+          0.9738495242771876
+        ]
+      },
+      {
+        "sequence_id": "Panthera_onca_001",
+        "cluster_id": 6,
+        "predicted_taxonomic_level": "viral",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          256,
+          0.5,
+          0.5,
+          0.05533596837944664,
+          5.25,
+          0.9368782361822761
+        ]
+      },
+      {
+        "sequence_id": "Felis_catus_002",
+        "cluster_id": 7,
+        "predicted_taxonomic_level": "viral",
+        "confidence": 0.5,
+        "novelty_score": 0.9,
+        "is_novel": true,
+        "classification_method": "database_independent",
+        "feature_signature": [
+          192,
+          0.5,
+          0.5,
+          0.1164021164021164,
+          5.0,
+          0.9603854425117812
+        ]
+      }
+    ],
+    "classification_tree": {
+      "type": "hierarchical_classification",
+      "levels": 7,
+      "total_sequences": 8,
+      "merge_history": [
+        {
+          "clusters": [
+            [
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "distance": 0.13143442635907698,
+          "size": 2
+        },
+        {
+          "clusters": [
+            [
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "distance": 0.16286294309896715,
+          "size": 3
+        },
+        {
+          "clusters": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "distance": 0.5661481226506914,
+          "size": 2
+        },
+        {
+          "clusters": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "distance": 1.151837832968555,
+          "size": 3
+        },
+        {
+          "clusters": [
+            [
+              5,
+              3,
+              4
+            ],
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "distance": 2.127903773441729,
+          "size": 6
+        },
+        {
+          "clusters": [
+            [
+              6
+            ],
+            [
+              7
+            ]
+          ],
+          "distance": 64.00126494016425,
+          "size": 2
+        },
+        {
+          "clusters": [
+            [
+              5,
+              3,
+              4,
+              2,
+              0,
+              1
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "distance": 149.73189984628974,
+          "size": 8
+        }
+      ]
+    },
+    "cluster_summary": {
+      "total_clusters": 8,
+      "largest_cluster_size": 1,
+      "smallest_cluster_size": 1,
+      "singleton_clusters": 8,
+      "cluster_distribution": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1
+      },
+      "taxonomic_distribution": {
+        "viral": 5,
+        "eukaryotic": 3
+      }
+    },
+    "novel_taxa_count": 8
+  },
+  "edna_processing": {
+    "otu_count": 8,
+    "cluster_labels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "marker_genes": {
+      "18S_count": 0,
+      "COI_count": 0
+    }
+  },
+  "microbiome_analysis": {
+    "phylum_distribution": {
+      "Bacteroidetes": 20.9,
+      "Firmicutes": 34.5,
+      "Proteobacteria": 18.2,
+      "Actinobacteria": 17.3,
+      "Verrucomicrobia": 4.5,
+      "Others": 4.5
+    },
+    "dominant_phyla": [
+      [
+        "Firmicutes",
+        34.5
+      ],
+      [
+        "Bacteroidetes",
+        20.9
+      ],
+      [
+        "Proteobacteria",
+        18.2
+      ]
+    ],
+    "diversity_metrics": {
+      "shannon_diversity": 2.977,
+      "species_richness": 75,
+      "chao1_estimator": 110
+    },
+    "otu_analysis": {
+      "total_otus": 37,
+      "singleton_otus": 9,
+      "dominant_otus": [
+        "OTU_001",
+        "OTU_002",
+        "OTU_003",
+        "OTU_004",
+        "OTU_005"
+      ]
+    }
+  },
+  "quantum_analysis": {
+    "quantum_benchmark": {
+      "classical_time_ms": 359,
+      "quantum_time_ms": 185,
+      "speed_ratio": 2.41,
+      "quantum_advantage": true
+    },
+    "alignment_analysis": {
+      "average_alignment_score": 0.904,
+      "quantum_optimization": "Applied",
+      "backend": "AerSimulator (Local)"
+    },
+    "clustering_results": {
+      "cluster_0": 12,
+      "cluster_1": 8,
+      "cluster_2": 5
+    }
+  },
+  "protein_analysis": {
+    "protein_predictions": [
+      {
+        "sequence_id": "seq_001",
+        "model_used": "ColabFold",
+        "confidence_score": 0.917,
+        "predicted_domains": [
+          "alpha_helix",
+          "beta_sheet"
+        ],
+        "structure_quality": "Low"
+      },
+      {
+        "sequence_id": "seq_002",
+        "model_used": "ColabFold",
+        "confidence_score": 0.889,
+        "predicted_domains": [
+          "transmembrane_domain"
+        ],
+        "structure_quality": "Low"
+      },
+      {
+        "sequence_id": "seq_003",
+        "model_used": "ColabFold",
+        "confidence_score": 0.905,
+        "predicted_domains": [
+          "alpha_helix",
+          "beta_sheet"
+        ],
+        "structure_quality": "Medium"
+      },
+      {
+        "sequence_id": "seq_004",
+        "model_used": "ColabFold",
+        "confidence_score": 0.889,
+        "predicted_domains": [
+          "transmembrane_domain"
+        ],
+        "structure_quality": "Medium"
+      },
+      {
+        "sequence_id": "seq_005",
+        "model_used": "ColabFold",
+        "confidence_score": 0.856,
+        "predicted_domains": [
+          "alpha_helix",
+          "beta_sheet"
+        ],
+        "structure_quality": "Low"
+      }
+    ],
+    "total_structures_predicted": 5,
+    "average_confidence": 0.891
+  },
+  "processing_time": "7.04 seconds",
+  "comprehensive_report": {
+    "executive_summary": {
+      "total_sequences": 8,
+      "species_identified": 5,
+      "conservation_priority": "High",
+      "data_quality": "High"
+    },
+    "key_findings": [
+      "Identified 5 unique species",
+      "Biodiversity index: 1.4942",
+      "Conservation alerts: 1",
+      "Processing time: 7.04 seconds"
+    ],
+    "recommendations": [
+      "Continue regular monitoring",
+      "Implement conservation measures for threatened species",
+      "Consider additional sampling for comprehensive assessment"
+    ],
+    "data_quality_assessment": {
+      "overall_quality": "High",
+      "sequence_completeness": "Complete",
+      "classification_confidence": "High"
+    }
+  }
+}
