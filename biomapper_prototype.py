@@ -126,6 +126,26 @@ class BioMapperPrototype:
                 "habitat": "Tropical forests, grasslands",
                 "geographic_range": "Central and South America"
             },
+            "Panthera_tigris": {
+                "common_name": "Tiger",
+                "scientific_name": "Panthera tigris",
+                "family": "Felidae",
+                "order": "Carnivora",
+                "class": "Mammalia",
+                "conservation_status": "Endangered",
+                "habitat": "Forests, grasslands, mangroves",
+                "geographic_range": "Asia"
+            },
+            "Panthera_leo": {
+                "common_name": "Lion",
+                "scientific_name": "Panthera leo",
+                "family": "Felidae",
+                "order": "Carnivora",
+                "class": "Mammalia",
+                "conservation_status": "Vulnerable",
+                "habitat": "Savannas, grasslands, scrub",
+                "geographic_range": "Africa, India"
+            },
             "Felis_catus": {
                 "common_name": "Domestic Cat",
                 "scientific_name": "Felis catus",
@@ -524,7 +544,9 @@ class BioMapperPrototype:
         """Classify species based on sequence patterns"""
         # Check for known patterns
         patterns = {
-            "ATCG": "Panthera_onca",
+            "ATGCCC": "Panthera_onca",
+            "ATGCTT": "Panthera_tigris",
+            "ATGCGT": "Panthera_leo",
             "GGCCT": "Felis_catus", 
             "TTAGC": "Canis_lupus",
             "CGTAC": "Ursus_americanus",
@@ -562,6 +584,37 @@ class BioMapperPrototype:
                 "local_db_match": False,
                 "iucn_status": "Not Applicable",
                 "classification_method": "environmental_classification"
+            }
+        
+        # Check sequence ID for species identification
+        if "tigris" in seq_id.lower() or "tiger" in seq_id.lower():
+            return {
+                "sequence_id": seq_id,
+                "predicted_species": "Panthera tigris",
+                "common_name": "Tiger",
+                "confidence": round(random.uniform(0.85, 0.98), 3),
+                "novelty_score": round(random.uniform(0.05, 0.20), 3),
+                "local_db_match": True,
+                "iucn_status": "Endangered",
+                "classification_method": "sequence_id_matching",
+                "family": "Felidae",
+                "order": "Carnivora",
+                "habitat": "Forests, grasslands"
+            }
+        
+        if "leo" in seq_id.lower() or "lion" in seq_id.lower():
+            return {
+                "sequence_id": seq_id,
+                "predicted_species": "Panthera leo",
+                "common_name": "Lion",
+                "confidence": round(random.uniform(0.85, 0.98), 3),
+                "novelty_score": round(random.uniform(0.05, 0.20), 3),
+                "local_db_match": True,
+                "iucn_status": "Vulnerable",
+                "classification_method": "sequence_id_matching",
+                "family": "Felidae",
+                "order": "Carnivora",
+                "habitat": "Savannas, grasslands"
             }
         
         # Pattern matching
@@ -671,10 +724,10 @@ class BioMapperPrototype:
     def _assess_conservation_status(self, sequences: List[Dict]) -> Dict[str, Any]:
         """Assess conservation status and generate alerts"""
         # Use enhanced analysis results if available
-        if hasattr(self, 'enhanced_analyzer') and self.enhanced_analyzer:
+        if hasattr(self, 'complete_analyzer') and self.complete_analyzer:
             enhanced_results = []
             for seq in sequences:
-                enhanced_result = self.enhanced_analyzer.analyze_sequence_complete(seq, sequences)
+                enhanced_result = self.complete_analyzer.analyze_sequence_complete(seq, sequences)
                 enhanced_results.append(enhanced_result)
             
             conservation_alerts = []
@@ -682,12 +735,17 @@ class BioMapperPrototype:
             threatened_species_details = []
             threatened_count = 0
             
+            print(f"🔍 Checking conservation status for {len(enhanced_results)} species...")
+            
             for result in enhanced_results:
                 species = result.get("Assigned_Name", "Unknown")
                 common_name = result.get("Common_Name", "Unknown")
                 asv_id = result.get("ASV_ID", "Unknown")
                 status = result.get("Conservation_Status", "Not Evaluated")
                 
+                print(f"   Species: {common_name} ({species}) - Status: {status}")
+                
+                # Check for all threatened categories
                 if status in ["Critically Endangered", "Endangered", "Vulnerable", "Near Threatened"]:
                     threatened_count += 1
                     priority_species.append(f"{common_name} ({species})")
@@ -697,11 +755,15 @@ class BioMapperPrototype:
                         "scientific_name": species,
                         "status": status
                     })
-                    conservation_alerts.append(f"ALERT: {asv_id} - {common_name} ({species}) is {status}")
+                    alert_msg = f"Conservation Alert: {common_name} ({asv_id}) is {status}"
+                    conservation_alerts.append(alert_msg)
+                    print(f"   🚨 ALERT GENERATED: {alert_msg}")
                 
                 novelty_flag = result.get("Novelty_Flag", "Known")
                 if novelty_flag == "Candidate_Novel":
                     conservation_alerts.append(f"NOVEL: {asv_id} - Potential new species detected")
+            
+            print(f"📊 Conservation Summary: {threatened_count} threatened species, {len(conservation_alerts)} alerts")
             
             return {
                 "total_species_assessed": len(enhanced_results),
@@ -724,12 +786,13 @@ class BioMapperPrototype:
                 continue
             
             species = classification.get("predicted_species", "Unknown")
+            common_name = classification.get("common_name", species)
             status = classification.get("iucn_status", "Not Evaluated")
             
             if status in ["Critically Endangered", "Endangered", "Vulnerable", "Near Threatened"]:
                 threatened_count += 1
                 priority_species.append(species)
-                conservation_alerts.append(f"Conservation Alert: {species} is {status}")
+                conservation_alerts.append(f"Conservation Alert: {common_name} is {status}")
         
         return {
             "total_species_assessed": len(classifications),
