@@ -614,9 +614,30 @@ function downloadResults() {
     link.click();
 }
 
-// Generate report (placeholder)
-function generateReport() {
-    showInfo('Report generation feature coming soon!');
+// Go back to file selection
+function goBack() {
+    // Reset to main page
+    document.getElementById('resultsSection').style.display = 'none';
+    document.getElementById('analysisSection').style.display = 'none';
+    document.querySelector('.upload-section').style.display = 'block';
+    
+    // Reset file input
+    document.getElementById('fileInput').value = '';
+    document.getElementById('fileInfo').innerHTML = '';
+    document.getElementById('fileInfo').style.display = 'none';
+    
+    // Reset progress
+    document.getElementById('progress').style.width = '0%';
+    document.getElementById('statusText').textContent = 'Initializing AI modules...';
+    
+    // Clear results
+    analysisResults = null;
+    selectedFile = null;
+    
+    // Reset analyze button
+    const analyzeBtn = document.getElementById('analyzeBtn');
+    analyzeBtn.disabled = true;
+    analyzeBtn.innerHTML = '<i class="fas fa-play"></i> Start AI Analysis';
 }
 
 // Reset to upload state
@@ -668,19 +689,6 @@ function showError(message) {
 // Display enhanced analysis results
 function displayEnhancedAnalysis(enhancedData) {
     if (!enhancedData || enhancedData.length === 0) return;
-    
-    // Create enhanced analysis section
-    const resultsGrid = document.querySelector('.results-grid');
-    const enhancedCard = document.createElement('div');
-    enhancedCard.className = 'result-card full-width';
-    enhancedCard.innerHTML = `
-        <h3><i class="fas fa-microscope"></i> Enhanced eDNA Analysis</h3>
-        <div id="enhancedAnalysisContent"></div>
-    `;
-    
-    // Insert before species classification
-    const speciesCard = resultsGrid.querySelector('.result-card.full-width');
-    resultsGrid.insertBefore(enhancedCard, speciesCard);
     
     // Populate enhanced analysis table
     const container = document.getElementById('enhancedAnalysisContent');
