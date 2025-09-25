@@ -1,0 +1,34 @@
+# BioMapper Prototype - Git Ignore
+
+# Analysis Results
+*.json
+biomapper_analysis_*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large Test Files
+large_test_*.fasta
+test_results_*.json
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
