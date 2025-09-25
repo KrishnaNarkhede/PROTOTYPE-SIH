@@ -6,7 +6,39 @@ let selectedFile = null;
 document.addEventListener('DOMContentLoaded', function() {
     initializeFileUpload();
     initializeDragAndDrop();
+    initializeTheme();
 });
+
+// Theme Management
+function initializeTheme() {
+    const savedTheme = localStorage.getItem('biomapper-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('biomapper-theme', newTheme);
+    updateThemeIcon(newTheme);
+    
+    // Add transition effect
+    document.body.style.transition = 'all 0.3s ease';
+    setTimeout(() => {
+        document.body.style.transition = '';
+    }, 300);
+}
+
+function updateThemeIcon(theme) {
+    const icon = document.getElementById('themeIcon');
+    if (theme === 'dark') {
+        icon.className = 'fas fa-sun';
+    } else {
+        icon.className = 'fas fa-moon';
+    }
+}
 
 // File upload initialization
 function initializeFileUpload() {
