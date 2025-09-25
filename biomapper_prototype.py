@@ -1622,6 +1622,66 @@ class BioMapperPrototype:
         except Exception as e:
             return {'error': f'FASTQ processing failed: {str(e)}'}
     
+    def analyze_fasta_content(self, content: str):
+        """Analyze FASTA content from string"""
+        sequences = self._parse_fasta_content(content)
+        return self.analyze_fasta_file(None, sequences)
+    
+    def process_fastq_content(self, content: str):
+        """Process FASTQ content from string"""
+        sequences = self._parse_fastq_content(content)
+        return self.analyze_fasta_file(None, sequences)
+    
+    def _parse_fasta_content(self, content: str) -> List[Dict[str, Any]]:
+        """Parse FASTA content from string"""
+        sequences = []
+        lines = content.strip().split('\n')
+        current_id = None
+        current_seq = []
+        
+        for line in lines:
+            line = line.strip()
+            if line.startswith('>'):
+                if current_id:
+                    sequences.append({
+                        "id": current_id,
+                        "description": current_id,
+                        "sequence": ''.join(current_seq).upper(),
+                        "length": len(''.join(current_seq))
+                    })
+                current_id = line[1:].split()[0]
+                current_seq = []
+            elif current_id and line:
+                current_seq.append(line)
+        
+        if current_id:
+            sequences.append({
+                "id": current_id,
+                "description": current_id,
+                "sequence": ''.join(current_seq).upper(),
+                "length": len(''.join(current_seq))
+            })
+        
+        return sequences
+    
+    def _parse_fastq_content(self, content: str) -> List[Dict[str, Any]]:
+        """Parse FASTQ content from string"""
+        sequences = []
+        lines = content.strip().split('\n')
+        
+        for i in range(0, len(lines), 4):
+            if i + 3 < len(lines):
+                seq_id = lines[i][1:] if lines[i].startswith('@') else f"seq_{i//4}"
+                sequence = lines[i + 1].upper()
+                sequences.append({
+                    "id": seq_id,
+                    "description": seq_id,
+                    "sequence": sequence,
+                    "length": len(sequence)
+                })
+        
+        return sequences
+    
     def analyze_fasta_sequences(self, sequences):
         """Analyze pre-loaded sequences with AI"""
         return self.analyze_fasta_file(None, sequences)
